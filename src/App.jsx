@@ -6,7 +6,6 @@ function App() {
 
   return (
     <>
-    <h1 className=''>Bismillahir Rahmanir Rahim</h1>
     <Home/>
     </>
   )
