@@ -29,15 +29,21 @@ const Header = () => {
                     Shop
                   </li>
                 </Link>
-                <li className="hover:text-[#262626] text-[#767676] text-sm">
-                  About
-                </li>
-                <li className="hover:text-[#262626] text-[#767676] text-sm">
-                  Contact
-                </li>
-                <li className="hover:text-[#262626] text-[#767676] text-sm">
-                  Journal
-                </li>
+                <Link to={"/About"}>
+                  <li className="hover:text-[#262626] text-[#767676] text-sm">
+                    About
+                  </li>
+                </Link>
+                <Link to={"/Contact"}>
+                  <li className="hover:text-[#262626] text-[#767676] text-sm">
+                    Contact
+                  </li>
+                </Link>
+                <Link to={"/Journal"}>
+                  <li className="hover:text-[#262626] text-[#767676] text-sm">
+                    Journal
+                  </li>
+                </Link>
               </ul>
             </div>
           </Flex>

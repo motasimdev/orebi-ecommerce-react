@@ -1,9 +1,9 @@
 import React from "react";
 import Container from "../Container";
-import Flex from "../Flex";
 import Heading from "../Heading";
 import Image from "../Image";
 import logo from "/src/assets/logo.png"
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
@@ -14,21 +14,31 @@ const Footer = () => {
             <div className="w-[10%]">
               <Heading text={"Menu"} as={"h4"} className={"pb-4"} />
               <ul>
-                <li className="hover:text-[#262626] text-[#767676] text-sm pb-2.5">
-                  Home
-                </li>
-                <li className="hover:text-[#262626] text-[#767676] text-sm pb-2.5">
-                  Shop
-                </li>
-                <li className="hover:text-[#262626] text-[#767676] text-sm pb-2.5">
-                  About
-                </li>
-                <li className="hover:text-[#262626] text-[#767676] text-sm pb-2.5">
-                  Contact
-                </li>
-                <li className="hover:text-[#262626] text-[#767676] text-sm pb-2.5">
-                  Journal
-                </li>
+                <Link to={"/"}>
+                  <li className="hover:text-[#262626] text-[#767676] text-sm pb-2.5">
+                    Home
+                  </li>
+                </Link>
+                <Link to={"/shop"}>
+                  <li className="hover:text-[#262626] text-[#767676] text-sm pb-2.5">
+                    shop
+                  </li>
+                </Link>
+                <Link to={"/About"}>
+                  <li className="hover:text-[#262626] text-[#767676] text-sm pb-2.5">
+                    About
+                  </li>
+                </Link>
+                <Link to={"/Contact"}>
+                  <li className="hover:text-[#262626] text-[#767676] text-sm pb-2.5">
+                    Contact
+                  </li>
+                </Link>
+                <Link to={"/Journal"}>
+                  <li className="hover:text-[#262626] text-[#767676] text-sm pb-2.5">
+                    Journal
+                  </li>
+                </Link>
               </ul>
             </div>
             <div className="w-[15%]">
