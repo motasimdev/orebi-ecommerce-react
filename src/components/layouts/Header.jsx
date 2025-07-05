@@ -6,6 +6,7 @@ import logo from "/src/assets//logo.png";
 import { HiMiniBars3BottomLeft } from "react-icons/hi2";
 import Heading from "../Heading";
 import { FaSearch, FaUser, FaAngleDown, FaShoppingCart } from "react-icons/fa";
+import { Link } from "react-router";
 
 const Header = () => {
   return (
@@ -18,12 +19,16 @@ const Header = () => {
             </div>
             <div className="m-auto">
               <ul className="flex items-center gap-x-[20px]">
-                <li className="hover:text-[#262626] text-[#767676] text-sm">
-                  Home
-                </li>
-                <li className="hover:text-[#262626] text-[#767676] text-sm">
-                  Shop
-                </li>
+                <Link to={"/"}>
+                  <li className="hover:text-[#262626] text-[#767676] text-sm">
+                    Home
+                  </li>
+                </Link>
+                <Link to={"/shop"}>
+                  <li className="hover:text-[#262626] text-[#767676] text-sm">
+                    Shop
+                  </li>
+                </Link>
                 <li className="hover:text-[#262626] text-[#767676] text-sm">
                   About
                 </li>
