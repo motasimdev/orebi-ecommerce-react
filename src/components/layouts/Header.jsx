@@ -52,7 +52,7 @@ const Header = () => {
 
             <div className="relative">
               <input
-                type="search"
+                type="text"
                 placeholder="Search Products"
                 className="p-4 w-[600px] border-none focus:outline-0 bg-white"
               />
