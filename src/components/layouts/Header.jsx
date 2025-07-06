@@ -15,7 +15,9 @@ const Header = () => {
         <Container>
           <Flex>
             <div className="">
-              <Image src={logo} alt={"logo"} />
+              <Link to={"/"}>
+                <Image src={logo} alt={"logo"} />
+              </Link>
             </div>
             <div className="m-auto">
               <ul className="flex items-center gap-x-[20px]">
