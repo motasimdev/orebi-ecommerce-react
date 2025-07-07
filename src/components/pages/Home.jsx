@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
     <motion.div 
-      className="h-2 bg-amber-400 w-full origin-left fixed top-0 left-0"
+      className="h-2 bg-[#717171] w-full origin-left fixed top-0 left-0 z-[100]"
       style={{
         scaleX: scrollYProgress
       }}

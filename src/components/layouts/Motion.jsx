@@ -31,14 +31,14 @@ const Motion = () => {
               y: 0,
             }}
             transition={{
-              duration: 3,
-              delay: 1,
+              duration: 1,
+            //   delay: 1,
               // repeat: infinity/2
               // ease: 'anticipate'
             }}
             animate={{
               opacity: 1,
-              x: 0,
+              x: 1000,
               // x: [0,800,800,0,0],
               // y: [0,0,300,300,0],
               // rotate: [360,0,360,-360,0]
