@@ -4,20 +4,56 @@ import productOne from "/src/assets/aboutOne.png";
 import productTwo from "/src/assets/aboutTwo.png";
 import Container from "../Container";
 import Flex from "../Flex";
+import { Link } from "react-router";
+import { motion } from "motion/react";
+import Heading from "../Heading";
 
 const AboutProduct = () => {
   return (
     <>
-      <div className="pt-[90px] pb-[65px]">
+      <div className="pt-[50px] pb-[65px]">
         <Container>
           <Flex className={"justify-between"}>
-            <div className="w-49%">
-              <Image src={productOne} alt={"productOne"} />
-            </div>
-            <div className="w-49%">
-              <Image src={productTwo} alt={"productTwo"} />
-            </div>
+            <motion.div
+              className="w-[49%]"
+              whileTap={{
+                scale: 0.9,
+              }}
+            >
+              <Link to={"/about"}>
+                <Image
+                  src={productOne}
+                  alt={"productOne"}
+                  className={"w-full"}
+                />
+              </Link>
+            </motion.div>
+            <motion.div
+              className="w-[49%]"
+              whileTap={{
+                scale: 0.9,
+              }}
+            >
+              <Link>
+                <Image
+                  src={productTwo}
+                  alt={"productTwo"}
+                  className={"w-full"}
+                />
+              </Link>
+            </motion.div>
           </Flex>
+        </Container>
+      </div>
+      <div className="py-[50px]">
+        <Container>
+          <Heading
+            text={
+              "Orebi is one of the world’s leading ecommerce brands and is internationally recognized for celebrating the essence of classic Worldwide cool looking style."
+            }
+            as={"h3"}
+            className={"font-normal text-[32px] text-[#262626] leading-[52px]"}
+          />
         </Container>
       </div>
     </>
