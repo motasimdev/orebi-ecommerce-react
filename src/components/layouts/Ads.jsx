@@ -18,6 +18,8 @@ const Ads = () => {
           <Flex className={"justify-between"}>
             <motion.div
               className="w-[49%]"
+
+            //   ==================
               initial={{
                 x: -50,
                 opacity: 0,
@@ -43,6 +45,8 @@ const Ads = () => {
             </motion.div>
             <div className="w-[49%]">
               <motion.div className=""
+
+            //   =====================
               initial={{
                 x: 50,
                 opacity: 0
