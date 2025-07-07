@@ -47,7 +47,26 @@ const Vision = () => {
             </motion.div>
 
             {/* ================================================ */}
-            <div className="w-[33%]">
+            <motion.div
+              className="w-[33%]"
+
+              // =======animate========
+              initial={{
+                y: -70,
+                opacity: 0,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              viewport={{
+                once: false,
+                amount: 0.2,
+              }}
+              transition={{
+                duration: 1,
+              }}
+            >
               <Heading
                 text={"Our Vision"}
                 as={"h3"}
@@ -60,13 +79,12 @@ const Vision = () => {
                 as={"p"}
                 className={"font-normal text-base text-[#767676] leading-7"}
               />
-            </div>
+            </motion.div>
 
             {/* ================================================= */}
             <motion.div
               className="w-[33%]"
-
-            //   =====animate======
+              //   =====animate======
               initial={{
                 x: 50,
                 opacity: 0,
