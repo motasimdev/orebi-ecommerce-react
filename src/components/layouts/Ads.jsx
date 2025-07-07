@@ -28,15 +28,15 @@ const Ads = () => {
                 opacity: 1,
                 x: 0,
               }}
+              viewport={{
+                once: false,
+                amount: 0.2,
+              }}
               transition={{
                 duration: 1,
               }}
               whileHover={{
                 scale: 1.1,
-              }}
-              viewport={{
-                once: false,
-                amount: 0.2,
               }}
             >
               <Link to={"/"}>
@@ -55,15 +55,15 @@ const Ads = () => {
                 opacity: 1,
                 x: 0
               }}
+              viewport={{
+                once: false,
+                amount: 0.2
+              }}
               transition={{
                 duration: 1
               }}
               whileHover={{
                 scale: 1.1
-              }}
-              viewport={{
-                once: false,
-                amount: 0.2
               }}
               >
                 <Link to={"/"}>

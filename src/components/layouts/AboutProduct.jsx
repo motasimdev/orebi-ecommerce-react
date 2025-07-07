@@ -14,8 +14,27 @@ const AboutProduct = () => {
       <div className="pt-[50px] pb-[65px]">
         <Container>
           <Flex className={"justify-between"}>
+
+            {/* ======================= */}
             <motion.div
               className="w-[49%]"
+
+            //   ========animate===========
+            initial={{
+                x: -50,
+                opacity: 0,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              viewport={{
+                once: false,
+                amount: 0.2,
+              }}
+              transition={{
+                duration: 1,
+              }}
               whileTap={{
                 scale: 0.9,
               }}
@@ -28,8 +47,27 @@ const AboutProduct = () => {
                 />
               </Link>
             </motion.div>
+
+            {/* ================== */}
             <motion.div
               className="w-[49%]"
+
+            //   =====animate=======
+            initial={{
+                x: 50,
+                opacity: 0
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0
+              }}
+              viewport={{
+                once: false,
+                amount: 0.2
+              }}
+              transition={{
+                duration: 1
+              }}
               whileTap={{
                 scale: 0.9,
               }}
@@ -45,6 +83,8 @@ const AboutProduct = () => {
           </Flex>
         </Container>
       </div>
+
+      {/* ======================================2nd================================================= */}
       <div className="py-[50px]">
         <Container>
           <Heading
