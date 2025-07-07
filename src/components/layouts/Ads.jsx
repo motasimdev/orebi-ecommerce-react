@@ -6,6 +6,9 @@ import adONe from "/src/assets/lightProduct.png";
 import adTwo from "/src/assets/watchProduct.png";
 import adThree from "/src/assets/lampProduct.png";
 import { Link } from "react-router";
+import { motion } from "motion/react";
+
+const MotionLink = motion(Link);
 
 const Ads = () => {
   return (
@@ -13,18 +16,80 @@ const Ads = () => {
       <div className="pt-[170px] pb-[65px]">
         <Container>
           <Flex className={"justify-between"}>
-            <div className="w-[49%]">
+            <motion.div
+              className="w-[49%]"
+              initial={{
+                x: -50,
+                opacity: 0,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              transition={{
+                duration: 1,
+              }}
+              whileHover={{
+                scale: 1.1,
+              }}
+              viewport={{
+                once: false,
+                amount: 0.2,
+              }}
+            >
               <Link to={"/"}>
                 <Image src={adONe} alt={"adOne"} className={"w-full"} />
               </Link>
-            </div>
+            </motion.div>
             <div className="w-[49%]">
-              <Link to={"/"}>
-                <Image src={adTwo} alt={"adTwo"} className={"w-full pb-8"} />
-              </Link>
-              <Link to={"/"}>
-                <Image src={adThree} alt={"adThree"} className={"w-full"} />
-              </Link>
+              <motion.div className=""
+              initial={{
+                x: 50,
+                opacity: 0
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0
+              }}
+              transition={{
+                duration: 1
+              }}
+              whileHover={{
+                scale: 1.1
+              }}
+              viewport={{
+                once: false,
+                amount: 0.2
+              }}
+              >
+                <Link to={"/"}>
+                  <Image src={adTwo} alt={"adTwo"} className={"w-full pb-8"} />
+                </Link>
+              </motion.div>
+              <motion.div className=""
+              initial={{
+                x: 50,
+                opacity: 0
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0
+              }}
+              transition={{
+                duration: 1
+              }}
+              whileHover={{
+                scale: 1.1
+              }}
+              viewport={{
+                once: false,
+                amount: 0.2
+              }}
+              >
+                <Link to={"/"}>
+                  <Image src={adThree} alt={"adThree"} className={"w-full"} />
+                </Link>
+              </motion.div>
             </div>
           </Flex>
         </Container>

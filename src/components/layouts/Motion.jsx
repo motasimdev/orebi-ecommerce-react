@@ -2,6 +2,9 @@ import React from "react";
 import { motion, useScroll } from "motion/react";
 import Container from "../Container";
 import Image from "../Image";
+import adThree from '/src/assets/lampProduct.png'
+
+const MotionImage = motion(Image)
 
 const Motion = () => {
   // const scrollYProgress = useScroll().scrollYProgress
@@ -10,7 +13,7 @@ const Motion = () => {
   return (
     <>
       <motion.div
-        className="h-2 bg-amber-400 w-full fixed top-0 left-0"
+        className="h-2 bg-amber-400 origin-left w-full fixed top-0 left-0"
         style={{
           scaleX: scrollYProgress,
         }}
@@ -18,6 +21,8 @@ const Motion = () => {
 
       <div className="">
         <Container>
+          
+          {/* ========================================= */}
           <motion.div
             className="w-[60px] p-15 bg-amber-600"
             initial={{
@@ -33,11 +38,12 @@ const Motion = () => {
             }}
             animate={{
               opacity: 1,
-              x: 0
+              x: 0,
               // x: [0,800,800,0,0],
               // y: [0,0,300,300,0],
               // rotate: [360,0,360,-360,0]
               // ==================================
+              rotate: 900
             }}
             whileHover={{
               backgroundColor: "blue",
@@ -61,6 +67,26 @@ const Motion = () => {
             // ======================
             exit={{}}
           ></motion.div>
+
+          {/* =========================================== */}
+
+          <div className="my-5">
+            <MotionImage src={adThree} alt={"adThree"} className={""}
+            initial={{
+                opacity: 0
+            }}
+            animate={{
+                x: 1000,
+                opacity: 1
+            }}
+            transition={{
+                duration: 3
+            }}
+            whileHover={{
+                scale: 0.8
+            }}
+            />
+          </div>
         </Container>
       </div>
     </>
