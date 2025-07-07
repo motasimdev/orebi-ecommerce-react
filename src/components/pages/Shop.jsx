@@ -1,9 +1,10 @@
 import React from 'react'
+import Motion from '../layouts/Motion'
 
 const Shop = () => {
   return (
     <>
-    <h1>this is shop page</h1>
+    <Motion/>
     </>
   )
 }
