@@ -35,11 +35,11 @@ const Ads = () => {
               transition={{
                 duration: 1,
               }}
-              whileHover={{
-                scale: 1.1,
+              whileTap={{
+                scale: 0.9,
               }}
             >
-              <Link to={"/"}>
+              <Link to={"/productInside"}>
                 <Image src={adONe} alt={"adOne"} className={"w-full"} />
               </Link>
             </motion.div>
@@ -62,11 +62,11 @@ const Ads = () => {
               transition={{
                 duration: 1
               }}
-              whileHover={{
-                scale: 1.1
+              whileTap={{
+                scale: 0.9
               }}
               >
-                <Link to={"/"}>
+                <Link to={"/productInside"}>
                   <Image src={adTwo} alt={"adTwo"} className={"w-full pb-8"} />
                 </Link>
               </motion.div>
@@ -82,15 +82,15 @@ const Ads = () => {
               transition={{
                 duration: 1
               }}
-              whileHover={{
-                scale: 1.1
+              whileTap={{
+                scale: 0.9
               }}
               viewport={{
                 once: false,
                 amount: 0.2
               }}
               >
-                <Link to={"/"}>
+                <Link to={"/productInside"}>
                   <Image src={adThree} alt={"adThree"} className={"w-full"} />
                 </Link>
               </motion.div>
