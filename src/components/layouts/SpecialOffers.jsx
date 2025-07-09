@@ -28,7 +28,7 @@ const SpecialOffers = () => {
 
   return (
     <>
-    <div className="pb-6">
+    <div className="pb-[110px]">
         <Container>
           <Heading
             text={"Special Offers"}

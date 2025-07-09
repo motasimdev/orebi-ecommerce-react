@@ -20,6 +20,7 @@ const BestSellers = () => {
     arrows: true,
     autoplay: true,
     autoplaySpeed: 1000,
+    rtl: true,
   };
 
   return (
