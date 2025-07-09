@@ -31,44 +31,46 @@ const BestSellers = () => {
             as={"h3"}
             className={"font-bold text-[39px] pb-15 pt-12"}
           />
-          <Slider {...settings}>
-            <div className="px-2">
-              <SingleProduct
-                BadgeText={"10%"}
-                productTitle={"Basic Crew Neck Tee"}
-                productPrice={"$44.00"}
-                imgSrc={jar}
-                alt={"jar"}
-              />
-            </div>
-            <div className="px-2">
-              <SingleProduct
-                BadgeText={"10%"}
-                productTitle={"Basic Crew Neck Tee"}
-                productPrice={"$44.00"}
-                imgSrc={bag}
-                alt={"bag"}
-              />
-            </div>
-            <div className="px-2">
-              <SingleProduct
-                BadgeText={"10%"}
-                productTitle={"Basic Crew Neck Tee"}
-                productPrice={"$44.00"}
-                imgSrc={hamandista}
-                alt={"hamandista"}
-              />
-            </div>
-            <div className="px-2">
-              <SingleProduct
-                BadgeText={"10%"}
-                productTitle={"Basic Crew Neck Tee"}
-                productPrice={"$44.00"}
-                imgSrc={bagTwo}
-                alt={"bagTwo"}
-              />
-            </div>
-          </Slider>
+          <div className="-mx-2">
+            <Slider {...settings}>
+              <div className="px-2">
+                <SingleProduct
+                  BadgeText={"10%"}
+                  productTitle={"Basic Crew Neck Tee"}
+                  productPrice={"$44.00"}
+                  imgSrc={jar}
+                  alt={"jar"}
+                />
+              </div>
+              <div className="px-2">
+                <SingleProduct
+                  BadgeText={"10%"}
+                  productTitle={"Basic Crew Neck Tee"}
+                  productPrice={"$44.00"}
+                  imgSrc={bag}
+                  alt={"bag"}
+                />
+              </div>
+              <div className="px-2">
+                <SingleProduct
+                  BadgeText={"10%"}
+                  productTitle={"Basic Crew Neck Tee"}
+                  productPrice={"$44.00"}
+                  imgSrc={hamandista}
+                  alt={"hamandista"}
+                />
+              </div>
+              <div className="px-2">
+                <SingleProduct
+                  BadgeText={"10%"}
+                  productTitle={"Basic Crew Neck Tee"}
+                  productPrice={"$44.00"}
+                  imgSrc={bagTwo}
+                  alt={"bagTwo"}
+                />
+              </div>
+            </Slider>
+          </div>
         </Container>
       </div>
     </>
