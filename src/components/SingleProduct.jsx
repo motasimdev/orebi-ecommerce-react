@@ -10,7 +10,7 @@ import Compare from "../icons/Compare";
 const SingleProduct = ({BadgeText, imgSrc, alt, productTitle, productPrice }) => {
   return (
     <>
-      <div className="w-[25%] relative group">
+      <div className="relative group">
         <Image src={imgSrc} alt={alt} />
         <Badge className={"absolute top-4 left-4"} text={BadgeText} />
 

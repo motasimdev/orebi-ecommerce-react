@@ -15,60 +15,72 @@ const NewArrival = () => {
   var settings = {
     dots: true,
     infinite: true,
-    speed: 500,
-    slidesToShow: 1,
+    speed: 300,
+    slidesToShow: 4,
     slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
   };
 
   return (
     <>
-      
-
-      <div className="pb-6">
+      <div className="pb-6 relative">
         <Container>
           <Heading
             text={"New Arrival"}
             as={"h3"}
             className={"font-bold text-[39px] pb-15 pt-12"}
           />
-          <Slider {...settings}>
-        <div>
-          <SingleProduct
-              BadgeText={"10%"}
-              productTitle={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-              imgSrc={watchA}
-              alt={"watchA"}
-            />
-        </div> 
-        <div>
-           <SingleProduct
-              BadgeText={"10%"}
-              productTitle={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-              imgSrc={watchB}
-              alt={"watchB"}
-            />
-        </div> 
-        <div>
-          <SingleProduct
-              BadgeText={"10%"}
-              productTitle={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-              imgSrc={jhuri}
-              alt={"jhuri"}
-            />
-        </div> 
-        <div>
-          <SingleProduct
-              BadgeText={"10%"}
-              productTitle={"Basic Crew Neck Tee"}
-              productPrice={"$44.00"}
-              imgSrc={putul}
-              alt={"putul"}
-            />
-        </div> 
-      </Slider>
+          <div className="">
+            <Slider {...settings}>
+              <div className="">
+                <SingleProduct
+                  BadgeText={"10%"}
+                  productTitle={"Basic Crew Neck Tee"}
+                  productPrice={"$44.00"}
+                  imgSrc={watchA}
+                  alt={"watchA"}
+                />
+              </div>
+              <div className="">
+                <SingleProduct
+                  BadgeText={"10%"}
+                  productTitle={"Basic Crew Neck Tee"}
+                  productPrice={"$44.00"}
+                  imgSrc={watchB}
+                  alt={"watchB"}
+                />
+              </div>
+              <div className="">
+                <SingleProduct
+                  BadgeText={"10%"}
+                  productTitle={"Basic Crew Neck Tee"}
+                  productPrice={"$44.00"}
+                  imgSrc={jhuri}
+                  alt={"jhuri"}
+                />
+              </div>
+              <div className="">
+                <SingleProduct
+                  BadgeText={"10%"}
+                  productTitle={"Basic Crew Neck Tee"}
+                  productPrice={"$44.00"}
+                  imgSrc={putul}
+                  alt={"putul"}
+                />
+              </div>
+              <div className="">
+                <SingleProduct
+                  BadgeText={"10%"}
+                  productTitle={"Basic Crew Neck Tee"}
+                  productPrice={"$44.00"}
+                  imgSrc={putul}
+                  alt={"putul"}
+                />
+              </div>
+            </Slider>
+          </div>
         </Container>
       </div>
     </>

@@ -1,3 +1,14 @@
 body{
     font-family:"DM Sans", sans-serif;
 }
+.slick-prev, .slick-next {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 50;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: black !important;
+  font-size: 30px;
+}
