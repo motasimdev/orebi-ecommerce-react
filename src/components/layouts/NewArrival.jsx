@@ -25,7 +25,7 @@ const NewArrival = () => {
 
   return (
     <>
-      <div className="pb-6 relative">
+      <div className="pb-6">
         <Container>
           <Heading
             text={"New Arrival"}

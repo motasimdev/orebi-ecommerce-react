@@ -5,6 +5,7 @@ import Ads from '../layouts/Ads'
 import { motion, useScroll } from "motion/react";
 import NewArrival from '../layouts/NewArrival';
 import BestSellers from '../layouts/BestSellers';
+import AdsTwo from '../layouts/AdsTwo';
 
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
     <Ads/>
     <NewArrival/>
     <BestSellers/>
+    <AdsTwo/>
     </>
   )
 }
