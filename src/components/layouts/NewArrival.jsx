@@ -7,6 +7,8 @@ import watchB from "/src/assets/watchB.png";
 import jhuri from "/src/assets/jhuri.png";
 import putul from "/src/assets/putul.png";
 import Heading from "../Heading";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const NewArrival = () => {
   return (
@@ -19,28 +21,28 @@ const NewArrival = () => {
               BadgeText={"10%"}
               productTitle={"Basic Crew Neck Tee"}
               productPrice={"$44.00"}
-              src={watchA}
+              imgSrc={watchA}
               alt={"watchA"}
             />
             <SingleProduct
               BadgeText={"10%"}
               productTitle={"Basic Crew Neck Tee"}
               productPrice={"$44.00"}
-              src={watchB}
+              imgSrc={watchB}
               alt={"watchB"}
             />
             <SingleProduct
               BadgeText={"10%"}
               productTitle={"Basic Crew Neck Tee"}
               productPrice={"$44.00"}
-              src={jhuri}
+              imgSrc={jhuri}
               alt={"jhuri"}
             />
             <SingleProduct
               BadgeText={"10%"}
               productTitle={"Basic Crew Neck Tee"}
               productPrice={"$44.00"}
-              src={putul}
+              imgSrc={putul}
               alt={"putul"}
             />
           </Flex>

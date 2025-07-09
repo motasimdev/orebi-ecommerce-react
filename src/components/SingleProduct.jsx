@@ -7,11 +7,11 @@ import { FaHeart, FaShoppingCart } from "react-icons/fa";
 import Flex from "./Flex";
 import Compare from "../icons/Compare";
 
-const SingleProduct = ({BadgeText, src, alt, productTitle, productPrice }) => {
+const SingleProduct = ({BadgeText, imgSrc, alt, productTitle, productPrice }) => {
   return (
     <>
       <div className="w-[25%] relative group">
-        <Image src={src} alt={alt} />
+        <Image src={imgSrc} alt={alt} />
         <Badge className={"absolute top-4 left-4"} text={BadgeText} />
 
         {/* ================ */}
