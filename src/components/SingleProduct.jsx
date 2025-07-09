@@ -8,15 +8,15 @@ import { FaHeart, FaShoppingCart } from "react-icons/fa";
 import Flex from "./Flex";
 import Compare from "../icons/Compare";
 
-const SingleProduct = () => {
+const SingleProduct = ({BadgeText, src, alt, productTitle, productPrice }) => {
   return (
     <>
       <div className="w-[25%] relative group">
-        <Image src={watchA} alt={"watchA"} />
-        <Badge className={"absolute top-4 left-4"} text={"10%"} />
+        <Image src={src} alt={alt} />
+        <Badge className={"absolute top-4 left-4"} text={BadgeText} />
 
         {/* ================ */}
-        <div className="bg-[#c90909] p-7.5 absolute bottom-0 left-0 w-full translate-y-4 opacity-0 group-hover:opacity-100 hover:translate-y-0 transition-all ease-in-out duration-300">
+        <div className="bg-white p-7.5 absolute bottom-9 left-0 w-full translate-y-4 opacity-0 group-hover:opacity-100 hover:translate-y-0 transition-all ease-in-out duration-300">
           <Link>
             <Flex className={"justify-end gap-x-3 "}>
               <Heading text={"Add to Wish List"} as={"p"} className={"text-[#767676] text-base"} />
@@ -35,6 +35,12 @@ const SingleProduct = () => {
               <FaShoppingCart  />
             </Flex>
           </Link>
+        </div>
+        <div className="bg-white py-3">
+                <Flex className={"justify-between"}>
+                    <Heading text={productTitle} as={"h3"} className={""}/>
+                    <Heading text={productPrice} as={"h3"} className={""}/>
+                </Flex>
         </div>
       </div>
     </>
