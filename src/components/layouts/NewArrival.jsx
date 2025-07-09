@@ -9,43 +9,66 @@ import putul from "/src/assets/putul.png";
 import Heading from "../Heading";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 const NewArrival = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <>
+      
+
       <div className="pb-6">
         <Container>
-            <Heading text={"New Arrival"} as={"h3"} className={"font-bold text-[39px] pb-15 pt-12"}/>
-          <Flex className={"gap-x-5"}>
-            <SingleProduct
+          <Heading
+            text={"New Arrival"}
+            as={"h3"}
+            className={"font-bold text-[39px] pb-15 pt-12"}
+          />
+          <Slider {...settings}>
+        <div>
+          <SingleProduct
               BadgeText={"10%"}
               productTitle={"Basic Crew Neck Tee"}
               productPrice={"$44.00"}
               imgSrc={watchA}
               alt={"watchA"}
             />
-            <SingleProduct
+        </div> 
+        <div>
+           <SingleProduct
               BadgeText={"10%"}
               productTitle={"Basic Crew Neck Tee"}
               productPrice={"$44.00"}
               imgSrc={watchB}
               alt={"watchB"}
             />
-            <SingleProduct
+        </div> 
+        <div>
+          <SingleProduct
               BadgeText={"10%"}
               productTitle={"Basic Crew Neck Tee"}
               productPrice={"$44.00"}
               imgSrc={jhuri}
               alt={"jhuri"}
             />
-            <SingleProduct
+        </div> 
+        <div>
+          <SingleProduct
               BadgeText={"10%"}
               productTitle={"Basic Crew Neck Tee"}
               productPrice={"$44.00"}
               imgSrc={putul}
               alt={"putul"}
             />
-          </Flex>
+        </div> 
+      </Slider>
         </Container>
       </div>
     </>
