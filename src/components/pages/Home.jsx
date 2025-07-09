@@ -4,6 +4,7 @@ import Information from '../layouts/Information'
 import Ads from '../layouts/Ads'
 import { motion, useScroll } from "motion/react";
 import NewArrival from '../layouts/NewArrival';
+import BestSellers from '../layouts/BestSellers';
 
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
     <Information/>
     <Ads/>
     <NewArrival/>
+    <BestSellers/>
     </>
   )
 }
