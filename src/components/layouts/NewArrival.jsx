@@ -75,6 +75,33 @@ const NewArrival = () => {
                   BadgeText={"10%"}
                   productTitle={"Basic Crew Neck Tee"}
                   productPrice={"$44.00"}
+                  imgSrc={watchA}
+                  alt={"watchA"}
+                />
+              </div>
+              <div className="px-2">
+                <SingleProduct
+                  BadgeText={"10%"}
+                  productTitle={"Basic Crew Neck Tee"}
+                  productPrice={"$44.00"}
+                  imgSrc={watchB}
+                  alt={"watchB"}
+                />
+              </div>
+              <div className="px-2">
+                <SingleProduct
+                  BadgeText={"10%"}
+                  productTitle={"Basic Crew Neck Tee"}
+                  productPrice={"$44.00"}
+                  imgSrc={jhuri}
+                  alt={"jhuri"}
+                />
+              </div>
+              <div className="px-2">
+                <SingleProduct
+                  BadgeText={"10%"}
+                  productTitle={"Basic Crew Neck Tee"}
+                  productPrice={"$44.00"}
                   imgSrc={putul}
                   alt={"putul"}
                 />
