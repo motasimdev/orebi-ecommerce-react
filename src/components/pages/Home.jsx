@@ -3,6 +3,7 @@ import Banner from '../layouts/Banner'
 import Information from '../layouts/Information'
 import Ads from '../layouts/Ads'
 import { motion, useScroll } from "motion/react";
+import NewArrival from '../layouts/NewArrival';
 
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
     <Banner/>
     <Information/>
     <Ads/>
+    <NewArrival/>
     </>
   )
 }

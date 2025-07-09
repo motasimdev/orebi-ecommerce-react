@@ -40,7 +40,7 @@ const Ads = () => {
               }}
             >
               <Link to={"/productInside"}>
-                <Image src={adONe} alt={"adOne"} className={"w-full"} />
+                <Image src={adONe} alt={"adOn e"} className={"w-full"} />
               </Link>
             </motion.div>
             <div className="w-[49%]">

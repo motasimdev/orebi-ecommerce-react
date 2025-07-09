@@ -4,7 +4,7 @@ import Motion from '../layouts/Motion'
 const Shop = () => {
   return (
     <>
-    <Motion/>
+    <h1>This is shop</h1>
     </>
   )
 }
