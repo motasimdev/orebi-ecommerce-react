@@ -41,6 +41,11 @@ const BestSellers = () => {
                   imgSrc={jar}
                   alt={"jar"}
                 />
+                <Heading
+                  text={"black"}
+                  as={"p"}
+                  className={"text-4 text-[#767676]"}
+                />
               </div>
               <div className="px-2">
                 <SingleProduct
@@ -49,6 +54,11 @@ const BestSellers = () => {
                   productPrice={"$44.00"}
                   imgSrc={bag}
                   alt={"bag"}
+                />
+                <Heading
+                  text={"black"}
+                  as={"p"}
+                  className={"text-4 text-[#767676]"}
                 />
               </div>
               <div className="px-2">
@@ -59,6 +69,11 @@ const BestSellers = () => {
                   imgSrc={hamandista}
                   alt={"hamandista"}
                 />
+                <Heading
+                  text={"black"}
+                  as={"p"}
+                  className={"text-4 text-[#767676]"}
+                />
               </div>
               <div className="px-2">
                 <SingleProduct
@@ -67,6 +82,11 @@ const BestSellers = () => {
                   productPrice={"$44.00"}
                   imgSrc={bagTwo}
                   alt={"bagTwo"}
+                />
+                <Heading
+                  text={"black"}
+                  as={"p"}
+                  className={"text-4 text-[#767676]"}
                 />
               </div>
             </Slider>

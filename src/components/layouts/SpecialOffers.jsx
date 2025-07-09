@@ -44,6 +44,10 @@ const SpecialOffers = () => {
                   productPrice={"$44.00"}
                   imgSrc={cap}
                   alt={"cap"}
+                /><Heading
+                  text={"black"}
+                  as={"p"}
+                  className={"text-4 text-[#767676]"}
                 />
               </div>
               <div className="px-2">
@@ -53,6 +57,10 @@ const SpecialOffers = () => {
                   productPrice={"$44.00"}
                   imgSrc={table}
                   alt={"table"}
+                /><Heading
+                  text={"black"}
+                  as={"p"}
+                  className={"text-4 text-[#767676]"}
                 />
               </div>
               <div className="px-2">
@@ -62,6 +70,10 @@ const SpecialOffers = () => {
                   productPrice={"$44.00"}
                   imgSrc={headphon}
                   alt={"headphon"}
+                /><Heading
+                  text={"black"}
+                  as={"p"}
+                  className={"text-4 text-[#767676]"}
                 />
               </div>
               <div className="px-2">
@@ -71,6 +83,10 @@ const SpecialOffers = () => {
                   productPrice={"$44.00"}
                   imgSrc={glasses}
                   alt={"glasses"}
+                /><Heading
+                  text={"black"}
+                  as={"p"}
+                  className={"text-4 text-[#767676]"}
                 />
               </div>
             </Slider>

@@ -37,8 +37,8 @@ const SingleProduct = ({BadgeText, imgSrc, alt, productTitle, productPrice }) =>
         </div>
         <div className="bg-white py-3">
                 <Flex className={"justify-between"}>
-                    <Heading text={productTitle} as={"h3"} className={""}/>
-                    <Heading text={productPrice} as={"h3"} className={""}/>
+                    <Heading text={productTitle} as={"h3"} className={"text-5 text-[#262626] font-bold"}/>
+                    <Heading text={productPrice} as={"h3"} className={"text-4 text-[#767676]"}/>
                 </Flex>
         </div>
       </div>
