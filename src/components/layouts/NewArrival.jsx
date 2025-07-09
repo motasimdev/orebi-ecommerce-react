@@ -32,9 +32,9 @@ const NewArrival = () => {
             as={"h3"}
             className={"font-bold text-[39px] pb-15 pt-12"}
           />
-          <div className="">
+          <div className="-mx-2">
             <Slider {...settings}>
-              <div className="">
+              <div className="px-2">
                 <SingleProduct
                   BadgeText={"10%"}
                   productTitle={"Basic Crew Neck Tee"}
@@ -43,7 +43,7 @@ const NewArrival = () => {
                   alt={"watchA"}
                 />
               </div>
-              <div className="">
+              <div className="px-2">
                 <SingleProduct
                   BadgeText={"10%"}
                   productTitle={"Basic Crew Neck Tee"}
@@ -52,7 +52,7 @@ const NewArrival = () => {
                   alt={"watchB"}
                 />
               </div>
-              <div className="">
+              <div className="px-2">
                 <SingleProduct
                   BadgeText={"10%"}
                   productTitle={"Basic Crew Neck Tee"}
@@ -61,7 +61,7 @@ const NewArrival = () => {
                   alt={"jhuri"}
                 />
               </div>
-              <div className="">
+              <div className="px-2">
                 <SingleProduct
                   BadgeText={"10%"}
                   productTitle={"Basic Crew Neck Tee"}
@@ -70,7 +70,7 @@ const NewArrival = () => {
                   alt={"putul"}
                 />
               </div>
-              <div className="">
+              <div className="px-2">
                 <SingleProduct
                   BadgeText={"10%"}
                   productTitle={"Basic Crew Neck Tee"}
