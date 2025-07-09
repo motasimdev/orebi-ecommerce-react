@@ -1,10 +1,11 @@
 import React from 'react'
 import Motion from '../layouts/Motion'
+import ShopTitle from '../layouts/ShopTitle'
 
 const Shop = () => {
   return (
     <>
-    <h1>This is shop</h1>
+    <ShopTitle/>
     </>
   )
 }
