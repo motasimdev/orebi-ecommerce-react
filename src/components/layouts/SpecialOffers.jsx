@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import SingleProduct from "../SingleProduct";
 import Container from "../Container";
 import Flex from "../Flex";
@@ -11,7 +11,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-const NewArrival = () => {
+const SpecialOffers = () => {
+
+    
   var settings = {
     dots: true,
     infinite: true,
@@ -23,9 +25,10 @@ const NewArrival = () => {
     autoplaySpeed: 1000,
   };
 
+
   return (
     <>
-      <div className="pb-6">
+    <div className="pb-6">
         <Container>
           <Heading
             text={"New Arrival"}
@@ -70,13 +73,12 @@ const NewArrival = () => {
                   alt={"putul"}
                 />
               </div>
-              
             </Slider>
           </div>
         </Container>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default NewArrival;
+export default SpecialOffers
