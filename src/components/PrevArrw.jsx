@@ -6,7 +6,7 @@ const PrevArrw = (props) => {
     const {onClick } = props;
   return (
     <div
-      className={"bg-red-800 text-center text-white "}
+      className={"text-black text-3xl absolute left-2 top-1/2 -translate-y-1/2 z-20"}
       onClick={onClick}
     ><GrCaretPrevious/></div>
   )
