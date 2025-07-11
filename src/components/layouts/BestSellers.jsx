@@ -14,7 +14,7 @@ import PrevArrw from "../PrevArrw";
 
 const BestSellers = () => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 4,

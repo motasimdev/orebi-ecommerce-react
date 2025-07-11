@@ -10,12 +10,14 @@ import Heading from "../Heading";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import NextArrw from "../NextArrw";
+import PrevArrw from "../PrevArrw";
 
 const SpecialOffers = () => {
 
     
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 4,
@@ -23,6 +25,8 @@ const SpecialOffers = () => {
     arrows: true,
     autoplay: true,
     autoplaySpeed: 1000,
+    nextArrow: <NextArrw />,
+    prevArrow: <PrevArrw />
   };
 
 
