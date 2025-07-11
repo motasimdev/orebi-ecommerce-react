@@ -6,7 +6,7 @@ const NextArrw = (props) => {
     const { onClick } = props;
   return (
     <div
-      className={"text-red"}
+      className={"text-black text-3xl absolute right-2 top-1/2 -translate-y-1/2"}
       onClick={onClick}
     ><GrCaretNext/></div>
   )
