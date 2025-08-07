@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SingleProduct from "../SingleProduct";
 import Container from "../Container";
 import Flex from "../Flex";
@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import NextArrw from "../NextArrw";
 import PrevArrw from "../PrevArrw";
+import axios from "axios";
 
 const NewArrival = () => {
   var settings = {
@@ -24,8 +25,20 @@ const NewArrival = () => {
     autoplay: true,
     autoplaySpeed: 1000,
     nextArrow: <NextArrw />,
-    prevArrow: <PrevArrw />
+    prevArrow: <PrevArrw />,
   };
+
+  const [myProduct, setMyproduct] = useState([]);
+
+  useEffect(() => {
+    async function all() {
+      let data = await axios.get("https://dummyjson.com/products");
+      setMyproduct(data.data);
+      
+    }
+
+    all();
+  }, []);
 
   return (
     <>
@@ -74,7 +87,6 @@ const NewArrival = () => {
                   alt={"putul"}
                 />
               </div>
-              
             </Slider>
           </div>
         </Container>
