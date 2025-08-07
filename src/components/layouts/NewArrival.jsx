@@ -33,8 +33,7 @@ const NewArrival = () => {
   useEffect(() => {
     async function all() {
       let data = await axios.get("https://dummyjson.com/products");
-      setMyproduct(data.data);
-      
+      setMyproduct(data.data.products);
     }
 
     all();
@@ -49,46 +48,21 @@ const NewArrival = () => {
             as={"h3"}
             className={"font-bold text-[39px] pb-15 pt-12"}
           />
-          <div className="-mx-2">
-            <Slider {...settings}>
-              <div className="px-2">
+          {/* <div className="-mx-2"> */}
+          <Slider {...settings}>
+            {myProduct.map((item) => (
+              <div key={item.id} className="px-4">
                 <SingleProduct
                   BadgeText={"10%"}
-                  productTitle={"Basic Crew Neck Tee"}
-                  productPrice={"$44.00"}
-                  imgSrc={watchA}
+                  productTitle={item.title}
+                  productPrice={`$${item.price}`}
+                  imgSrc={item.thumbnail}
                   alt={"watchA"}
                 />
               </div>
-              <div className="px-2">
-                <SingleProduct
-                  BadgeText={"10%"}
-                  productTitle={"Basic Crew Neck Tee"}
-                  productPrice={"$44.00"}
-                  imgSrc={watchB}
-                  alt={"watchB"}
-                />
-              </div>
-              <div className="px-2">
-                <SingleProduct
-                  BadgeText={"10%"}
-                  productTitle={"Basic Crew Neck Tee"}
-                  productPrice={"$44.00"}
-                  imgSrc={jhuri}
-                  alt={"jhuri"}
-                />
-              </div>
-              <div className="px-2">
-                <SingleProduct
-                  BadgeText={"10%"}
-                  productTitle={"Basic Crew Neck Tee"}
-                  productPrice={"$44.00"}
-                  imgSrc={putul}
-                  alt={"putul"}
-                />
-              </div>
-            </Slider>
-          </div>
+            ))}
+          </Slider>
+          {/* </div> */}
         </Container>
       </div>
     </>

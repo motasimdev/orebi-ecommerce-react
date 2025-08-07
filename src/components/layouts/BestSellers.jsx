@@ -11,6 +11,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import NextArrw from "../NextArrw";
 import PrevArrw from "../PrevArrw";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 const BestSellers = () => {
   var settings = {
@@ -27,6 +29,17 @@ const BestSellers = () => {
     prevArrow: <PrevArrw />
   };
 
+  const [myProduct, setMyproduct] = useState([]);
+
+  useEffect(() => {
+    async function all() {
+      let data = await axios.get("https://dummyjson.com/products");
+      setMyproduct(data.data.products);
+    }
+
+    all();
+  }, []);
+
   return (
     <>
       <div className="pb-6">
@@ -38,63 +51,18 @@ const BestSellers = () => {
           />
           <div className="-mx-2">
             <Slider {...settings}>
-              <div className="px-2">
+            {myProduct.map((item) => (
+              <div key={item.id} className="px-4">
                 <SingleProduct
                   BadgeText={"10%"}
-                  productTitle={"Basic Crew Neck Tee"}
-                  productPrice={"$44.00"}
-                  imgSrc={jar}
-                  alt={"jar"}
-                />
-                <Heading
-                  text={"black"}
-                  as={"p"}
-                  className={"text-4 text-[#767676]"}
+                  productTitle={item.title}
+                  productPrice={`$${item.price}`}
+                  imgSrc={item.thumbnail}
+                  alt={"watchA"}
                 />
               </div>
-              <div className="px-2">
-                <SingleProduct
-                  BadgeText={"10%"}
-                  productTitle={"Basic Crew Neck Tee"}
-                  productPrice={"$44.00"}
-                  imgSrc={bag}
-                  alt={"bag"}
-                />
-                <Heading
-                  text={"black"}
-                  as={"p"}
-                  className={"text-4 text-[#767676]"}
-                />
-              </div>
-              <div className="px-2">
-                <SingleProduct
-                  BadgeText={"10%"}
-                  productTitle={"Basic Crew Neck Tee"}
-                  productPrice={"$44.00"}
-                  imgSrc={hamandista}
-                  alt={"hamandista"}
-                />
-                <Heading
-                  text={"black"}
-                  as={"p"}
-                  className={"text-4 text-[#767676]"}
-                />
-              </div>
-              <div className="px-2">
-                <SingleProduct
-                  BadgeText={"10%"}
-                  productTitle={"Basic Crew Neck Tee"}
-                  productPrice={"$44.00"}
-                  imgSrc={bagTwo}
-                  alt={"bagTwo"}
-                />
-                <Heading
-                  text={"black"}
-                  as={"p"}
-                  className={"text-4 text-[#767676]"}
-                />
-              </div>
-            </Slider>
+            ))}
+          </Slider>
           </div>
         </Container>
       </div>
