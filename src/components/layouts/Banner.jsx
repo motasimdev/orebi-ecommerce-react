@@ -20,20 +20,22 @@ const Banner = () => {
 
   return (
     <>
-    
+      <Slider {...settings}>
+        <div>
           <div className="">
             <Link to={"/"}>
               <div className="bg-[url(/src/assets/banner.png)] h-[600px] bg-no-repeat bg-center bg-cover"></div>
             </Link>
           </div>
-          
+        </div>
+        <div>
           <div className="">
             <Link to={"/"}>
               <div className="bg-[url(/src/assets/banner.png)] h-[600px] bg-no-repeat bg-center bg-cover"></div>
             </Link>
           </div>
-       
-       
+        </div>
+      </Slider>
     </>
   );
 };
