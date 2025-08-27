@@ -11,7 +11,7 @@ import { Link } from "react-router";
 const Header = () => {
   return (
     <>
-      <div className="py-[30px]">
+      <div className="py-[30px] hidden lg:block">
         <Container>
           <Flex>
             <div className="">
