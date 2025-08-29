@@ -8,6 +8,7 @@ import Heading from "../Heading";
 import { FaSearch, FaUser, FaAngleDown, FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router";
 import { FaBars } from "react-icons/fa6";
+import BarCatagory from "../../assets/icons/BarCatagory";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -103,11 +104,12 @@ const Header = () => {
       </div>
       {/* responsive menu end */}
 
+{/* =========== header next ========== */}
       <div className="bg-[#F5F5F3] py-6 hidden lg:block">
         <Container>
           <Flex className={"justify-between"}>
             <div className="flex items-center gap-x-4">
-              <HiMiniBars3BottomLeft />
+              <BarCatagory />
               <Heading
                 className={"text-[#262626] text-sm"}
                 text={"Shop by Category"}
@@ -140,7 +142,7 @@ const Header = () => {
         <Container>
           <Flex className={"justify-between"}>
             <div className="flex items-center gap-x-2">
-              <HiMiniBars3BottomLeft />
+              <BarCatagory />
               <Heading
                 className={"text-[#262626] text-sm"}
                 text={"Category"}
