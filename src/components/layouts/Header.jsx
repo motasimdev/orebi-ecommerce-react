@@ -7,7 +7,7 @@ import { HiMiniBars3BottomLeft } from "react-icons/hi2";
 import Heading from "../Heading";
 import { FaSearch, FaUser, FaAngleDown, FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router";
-import { HiBars3CenterLeft } from "react-icons/hi2";
+import { FaBars } from "react-icons/fa6";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -61,7 +61,7 @@ const Header = () => {
           <div className="">
             <div className="flex justify-between ">
               <button className="cursor-pointer" onClick={() => setMenu(!menu)}>
-                <HiBars3CenterLeft />
+                <FaBars />
               </button>
               <Link to={"/"}>
                 <Image src={logo} alt={"logo"} className={""}/>
@@ -103,7 +103,7 @@ const Header = () => {
       </div>
       {/* responsive menu end */}
 
-      <div className="bg-[#F5F5F3] py-6">
+      <div className="bg-[#F5F5F3] py-6 hidden lg:block">
         <Container>
           <Flex className={"justify-between"}>
             <div className="flex items-center gap-x-4">
@@ -120,6 +120,37 @@ const Header = () => {
                 type="text"
                 placeholder="Search Products"
                 className="p-4 w-[600px] border-none focus:outline-0 bg-white"
+              />
+              <FaSearch className="absolute right-4 top-1/2 -translate-y-1/2 " />
+            </div>
+
+            <div className="flex gap-x-3">
+              <div className="flex">
+                <FaUser />
+                <FaAngleDown />
+              </div>
+              <FaShoppingCart />
+            </div>
+          </Flex>
+        </Container>
+      </div>
+      <div className="bg-[#F5F5F3] py-6 lg:hidden">
+        <Container>
+          <Flex className={"justify-between"}>
+            <div className="flex items-center gap-x-4">
+              <HiMiniBars3BottomLeft />
+              <Heading
+                className={"text-[#262626] text-sm"}
+                text={"Shop by Category"}
+                as={"h3"}
+              />
+            </div>
+
+            <div className="relative">
+              <input
+                type="text"
+                placeholder="Search Products"
+                className="p-4 w-[100px] border-none focus:outline-0 bg-white"
               />
               <FaSearch className="absolute right-4 top-1/2 -translate-y-1/2 " />
             </div>
