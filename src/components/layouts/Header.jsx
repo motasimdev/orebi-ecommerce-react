@@ -12,6 +12,7 @@ import BarCatagory from "../../assets/icons/BarCatagory";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
+  const [category, setCatagory] = useState(false);
   return (
     <>
       <div className="py-[30px] hidden lg:block">
@@ -104,7 +105,7 @@ const Header = () => {
       </div>
       {/* responsive menu end */}
 
-{/* =========== header next ========== */}
+      {/* =========== header next ========== */}
       <div className="bg-[#F5F5F3] py-6 hidden lg:block">
         <Container>
           <Flex className={"justify-between"}>
@@ -141,13 +142,26 @@ const Header = () => {
       <div className="bg-[#F5F5F3] py-6 lg:hidden px-3">
         <Container>
           <Flex className={"justify-between"}>
-            <div className="flex items-center gap-x-2">
-              <BarCatagory />
+            <div className="flex items-center gap-x-2 relative">
+              <button
+                className="cursor-pointer "
+                onClick={() => setCatagory(!category)}
+              >
+                <BarCatagory />
+              </button>
               <Heading
                 className={"text-[#262626] text-sm"}
                 text={"Category"}
                 as={"h3"}
               />
+              {category && (
+                <div className="absolute top-4.5 left-0 bg-teal-100 z-30 w-[100px] p-2">
+                  <h3>Men's Fasion</h3>
+                  <h3>Women's Fasion</h3>
+                  <h3>Electronics</h3>
+                  <h3>Food</h3>
+                </div>
+              )}
             </div>
 
             <div className="relative">
