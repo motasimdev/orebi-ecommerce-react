@@ -152,7 +152,7 @@ const Header = () => {
               <input
                 type="text"
                 placeholder="Search"
-                className="p-2 w-[250px] border-none focus:outline-0 bg-white"
+                className="p-2 w-[150px] border-none focus:outline-0 bg-white"
               />
               <FaSearch className="absolute right-2 top-1/2 -translate-y-1/2 " />
             </div>
