@@ -9,10 +9,14 @@ import { FaSearch, FaUser, FaAngleDown, FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router";
 import { FaBars } from "react-icons/fa6";
 import BarCatagory from "../../assets/icons/BarCatagory";
+import { RxCross1 } from "react-icons/rx";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
   const [category, setCatagory] = useState(false);
+  const [logIn, setLogin] = useState(false);
+  const [cart, setCart] = useState(false);
+
   return (
     <>
       <div className="py-[30px] hidden lg:block">
@@ -63,7 +67,7 @@ const Header = () => {
           <div className="">
             <div className="flex justify-between ">
               <button className="cursor-pointer" onClick={() => setMenu(!menu)}>
-                <FaBars />
+                {menu ? <RxCross1 /> : <FaBars />}
               </button>
               <Link to={"/"}>
                 <Image src={logo} alt={"logo"} className={""} />
@@ -106,6 +110,7 @@ const Header = () => {
       {/* responsive menu end */}
 
       {/* =========== header next ========== */}
+
       <div className="bg-[#F5F5F3] py-6 hidden lg:block">
         <Container>
           <Flex className={"justify-between"}>
@@ -174,11 +179,40 @@ const Header = () => {
             </div>
 
             <div className="flex gap-x-3">
-              <div className="flex">
-                <FaUser />
-                <FaAngleDown />
+              <div className=" relative">
+                <button
+                  className="cursor-pointer"
+                  onClick={() => setLogin(!logIn)}
+                >
+                  <div className="flex">
+                    <FaUser />
+                    <FaAngleDown />
+                  </div>
+                </button>
+                {logIn && (
+                  <div className="absolute top-4.5 right-0 bg-teal-100 z-30 w-[80px] p-2">
+                    <h3>Log In</h3>
+                    <h3>Sign Up</h3>
+                  </div>
+                )}
               </div>
-              <FaShoppingCart />
+
+
+              <div className="relative">
+                <button
+                  className="cursor-pointer"
+                  onClick={() => setCart(!cart)}
+                >
+                  <FaShoppingCart />
+                </button>
+                {cart && (
+                  <div className="absolute top-4.5 right-[-9px] bg-teal-100 z-30 w-[210px] h-[500px] p-2">
+                    <h3>Item:</h3>
+                    <h3>Item Title:</h3>
+                    <h3>Item Price:</h3>
+                  </div>
+                )}
+              </div>
             </div>
           </Flex>
         </Container>
