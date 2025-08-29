@@ -57,7 +57,7 @@ const Header = () => {
       </div>
 
       {/* responsive menu  */}
-      <Container>
+      
         <div className="py-[30px] lg:hidden">
           <Container>
             <div className="">
@@ -103,9 +103,9 @@ const Header = () => {
             </div>
           </Container>
         </div>
-      </Container>
       {/* responsive menu end */}
       
+
       <div className="bg-[#F5F5F3] py-6">
         <Container>
           <Flex className={"justify-between"}>
