@@ -56,7 +56,7 @@ const Header = () => {
 
       {/* responsive menu  */}
 
-      <div className="py-[6px] lg:hidden">
+      <div className="py-[20px] lg:hidden px-3">
         <Container>
           <div className="">
             <div className="flex justify-between ">
@@ -64,7 +64,7 @@ const Header = () => {
                 <FaBars />
               </button>
               <Link to={"/"}>
-                <Image src={logo} alt={"logo"} className={""}/>
+                <Image src={logo} alt={"logo"} className={""} />
               </Link>
             </div>
             {menu && (
@@ -134,7 +134,9 @@ const Header = () => {
           </Flex>
         </Container>
       </div>
-      <div className="bg-[#F5F5F3] py-6 lg:hidden">
+
+      {/* responsive ------ */}
+      <div className="bg-[#F5F5F3] py-6 lg:hidden px-3">
         <Container>
           <Flex className={"justify-between"}>
             <div className="flex items-center gap-x-4">
@@ -149,10 +151,10 @@ const Header = () => {
             <div className="relative">
               <input
                 type="text"
-                placeholder="Search Products"
-                className="p-4 w-[100px] border-none focus:outline-0 bg-white"
+                placeholder="Search"
+                className="p-2 w-[250px] border-none focus:outline-0 bg-white"
               />
-              <FaSearch className="absolute right-4 top-1/2 -translate-y-1/2 " />
+              <FaSearch className="absolute right-2 top-1/2 -translate-y-1/2 " />
             </div>
 
             <div className="flex gap-x-3">
@@ -165,6 +167,7 @@ const Header = () => {
           </Flex>
         </Container>
       </div>
+      {/* responsive end ----------- */}
     </>
   );
 };
