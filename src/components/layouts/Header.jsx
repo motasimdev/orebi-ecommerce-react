@@ -139,11 +139,11 @@ const Header = () => {
       <div className="bg-[#F5F5F3] py-6 lg:hidden px-3">
         <Container>
           <Flex className={"justify-between"}>
-            <div className="flex items-center gap-x-4">
+            <div className="flex items-center gap-x-2">
               <HiMiniBars3BottomLeft />
               <Heading
                 className={"text-[#262626] text-sm"}
-                text={"Shop by Category"}
+                text={"Category"}
                 as={"h3"}
               />
             </div>
