@@ -5,6 +5,7 @@ import Image from "../Image";
 import logo from "/src/assets/logo.png";
 import { Link } from "react-router";
 import Flex from "../Flex";
+import { FaCaretUp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -109,8 +110,14 @@ const Footer = () => {
       </div>
 
       {/* responsive------ md sm  */}
-      <div className="bg-gray-300 lg:hidden">
+      <div className="bg-gray-400 lg:hidden">
         <Container>
+          <div className="bg-gray-300 py-2 text-center">
+            <a href="#" className="text-sm">
+            <FaCaretUp className="m-auto" />
+              Tap to Top
+            </a>
+          </div>
           <Flex className={"p-3"}>
             <div className="w-[50%]">
               <ul>
@@ -181,6 +188,12 @@ const Footer = () => {
               </ul>
             </div>
           </Flex>
+          <div className="bg-gray-500 py-3">
+            <div className="text-center flex items-center">
+              <p className="text-sm font-medium">Already a customer?</p>
+              <a href="#" className="text-sm font-medium">Sign in</a>
+            </div>
+          </div>
         </Container>
       </div>
       {/* responsive------ md sm end */}
