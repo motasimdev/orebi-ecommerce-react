@@ -20,22 +20,45 @@ const Banner = () => {
 
   return (
     <>
-      <Slider {...settings}>
-        <div>
-          <div className="">
-            <Link to={"/"}>
-              <div className="bg-[url(/src/assets/banner.png)] h-[600px] bg-no-repeat bg-center bg-cover"></div>
-            </Link>
+      <div className="hidden lg:block">
+        <Slider {...settings}>
+          <div>
+            <div className="">
+              <Link to={"/"}>
+                <div className="bg-[url(/src/assets/banner.png)] h-[600px] bg-no-repeat bg-center bg-cover"></div>
+              </Link>
+            </div>
           </div>
-        </div>
-        <div>
-          <div className="">
-            <Link to={"/"}>
-              <div className="bg-[url(/src/assets/banner.png)] h-[600px] bg-no-repeat bg-center bg-cover"></div>
-            </Link>
+          <div>
+            <div className="">
+              <Link to={"/"}>
+                <div className="bg-[url(/src/assets/banner.png)] h-[600px] bg-no-repeat bg-center bg-cover"></div>
+              </Link>
+            </div>
           </div>
-        </div>
-      </Slider>
+        </Slider>
+      </div>
+
+      {/* responsive =----------------- */}
+      <div className="lg:hidden">
+        <Slider {...settings}>
+          <div>
+            <div className="">
+              <Link to={"/"}>
+                <div className="bg-[url(/src/assets/rsz_banner.jpg)] h-[600px] bg-no-repeat bg-center bg-cover"></div>
+              </Link>
+            </div>
+          </div>
+          <div>
+            <div className="">
+              <Link to={"/"}>
+                <div className="bg-[url(/src/assets/rsz_banner.jpg)] h-[600px] bg-no-repeat bg-center bg-cover"></div>
+              </Link>
+            </div>
+          </div>
+        </Slider>
+      </div>
+      {/* responsive =----------------- end */}
     </>
   );
 };
