@@ -147,25 +147,33 @@ const Header = () => {
       <div className="bg-[#F5F5F3] py-6 lg:hidden px-3">
         <Container>
           <Flex className={"justify-between"}>
-            <div className="flex items-center gap-x-2 relative">
+            <div className="relative">
               <button
                 className="cursor-pointer "
                 onClick={() => setCatagory(!category)}
               >
-                <BarCatagory />
-              </button>
-              <Heading
-                className={"text-[#262626] text-sm"}
-                text={"Category"}
-                as={"h3"}
-              />
-              {category && (
-                <div className="absolute top-4.5 left-0 bg-teal-100 z-30 w-[100px] p-2">
-                  <h3>Men's Fasion</h3>
-                  <h3>Women's Fasion</h3>
-                  <h3>Electronics</h3>
-                  <h3>Food</h3>
+                <div className="flex items-center gap-x-2">
+                  <BarCatagory />
+                  <Heading
+                    className={"text-[#262626] text-sm"}
+                    text={"Category"}
+                    as={"h3"}
+                  />
                 </div>
+              </button>
+              {category && (
+                <>
+                  <div
+                    className="fixed bg-transparent inset-0 z-10"
+                    onClick={() => setCatagory(false)}
+                  ></div>
+                  <div className="absolute top-4.5 left-0 bg-teal-100 z-30 w-[100px] p-2">
+                    <h3>Men's Fasion</h3>
+                    <h3>Women's Fasion</h3>
+                    <h3>Electronics</h3>
+                    <h3>Food</h3>
+                  </div>
+                </>
               )}
             </div>
 
@@ -190,13 +198,18 @@ const Header = () => {
                   </div>
                 </button>
                 {logIn && (
+                  <>
+                  <div
+                    className="fixed bg-transparent inset-0 z-10"
+                    onClick={() => setLogin(false)}
+                  ></div>
                   <div className="absolute top-4.5 right-0 bg-teal-100 z-30 w-[80px] p-2">
                     <h3>Log In</h3>
                     <h3>Sign Up</h3>
                   </div>
+                  </>
                 )}
               </div>
-
 
               <div className="relative">
                 <button
@@ -206,11 +219,13 @@ const Header = () => {
                   <FaShoppingCart />
                 </button>
                 {cart && (
+                    <>
                   <div className="absolute top-4.5 right-[-9px] bg-teal-100 z-30 w-[210px] h-[500px] p-2">
                     <h3>Item:</h3>
                     <h3>Item Title:</h3>
                     <h3>Item Price:</h3>
                   </div>
+                    </>
                 )}
               </div>
             </div>
