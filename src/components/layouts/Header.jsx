@@ -60,9 +60,10 @@ const Header = () => {
         </Container>
       </div>
 
-      {/* responsive menu  */}
 
-      <div className="py-[20px] lg:hidden px-3">
+      {/* responsive menu ----- */}
+
+      <div className="py-[20px] px-3 lg:hidden">
         <Container>
           <div className="">
             <div className="flex justify-between ">
@@ -107,7 +108,7 @@ const Header = () => {
           </div>
         </Container>
       </div>
-      {/* responsive menu end */}
+      {/* responsive menu  end */}
 
       {/* =========== header next ========== */}
 
@@ -153,7 +154,7 @@ const Header = () => {
                 onClick={() => setCatagory(!category)}
               >
                 <div className="flex items-center gap-x-2">
-                  <BarCatagory/>
+                  <BarCatagory />
                   <Heading
                     className={"text-[#262626] text-sm"}
                     text={"Category"}
