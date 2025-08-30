@@ -153,7 +153,7 @@ const Header = () => {
                 onClick={() => setCatagory(!category)}
               >
                 <div className="flex items-center gap-x-2">
-                  <BarCatagory />
+                  <BarCatagory/>
                   <Heading
                     className={"text-[#262626] text-sm"}
                     text={"Category"}

@@ -4,7 +4,7 @@ const BarCatagory = () => {
   return (
     <>
       <svg
-        width="19"
+        width="13"
         height="10"
         viewBox="0 0 19 10"
         fill="none"
