@@ -46,9 +46,9 @@ const NewArrival = () => {
           <Heading
             text={"New Arrival"}
             as={"h3"}
-            className={"font-bold text-[39px] pb-15 pt-12"}
+            className={"font-bold text-[39px] py-3 text-center"}
           />
-          {/* <div className="-mx-2"> */}
+          <div className="bg-gray-100 h-[350px]">
           <Slider {...settings}>
             {myProduct.map((item) => (
               <div key={item.id} className="px-4">
@@ -62,7 +62,7 @@ const NewArrival = () => {
               </div>
             ))}
           </Slider>
-          {/* </div> */}
+          </div>
         </Container>
       </div>
     </>
