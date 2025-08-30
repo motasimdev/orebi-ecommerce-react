@@ -15,15 +15,26 @@ const AdsTwo = () => {
         </Container>
       </div>
 
-      {/* responsive----------- */}
-      <div className="py-2 lg:hidden">
+      {/* responsive md----------- */}
+      <div className="py-2 hidden md:block lg:hidden">
         <Container>
           <Link>
             <Image src={watch} alt={"watch"} className={""}/>
           </Link>
         </Container>
       </div>
-      {/* responsive-----------end */}
+      {/* responsive md-----------end */}
+
+
+      {/* responsive sm----------- */}
+      <div className="py-2 md:hidden">
+        <Container>
+          <Link>
+            <Image src={watch} alt={"watch"} className={""}/>
+          </Link>
+        </Container>
+      </div>
+      {/* responsive sm-----------end */}
     </>
   );
 };

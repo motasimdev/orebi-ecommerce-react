@@ -40,6 +40,19 @@ const NewArrival = () => {
     prevArrow: <PrevArrw />,
   };
 
+  var tabSettings = {
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    nextArrow: <NextArrw />,
+    prevArrow: <PrevArrw />,
+  };
+
   const [myProduct, setMyproduct] = useState([]);
 
   useEffect(() => {
@@ -80,15 +93,15 @@ const NewArrival = () => {
 
       
       {/* responsive md---------- */}
-      <div className="md:hidden">
+      <div className="hidden md:block lg:hidden">
         <Container>
           <Heading
             text={"New Arrival"}
             as={"h3"}
             className={"font-bold text-[25px] py-3 text-center"}
             />
-          <div className="bg-gray-100 h-[350px]">
-          <Slider {...mobileSettings}>
+          <div className="bg-gray-100 h-[380px]">
+          <Slider {...tabSettings}>
             {myProduct.map((item) => (
               <div key={item.id} className="px-4">
                 <SingleProduct
@@ -108,7 +121,7 @@ const NewArrival = () => {
 
 
       {/* responsive sm---------- */}
-      <div className="hidden md:block lg:hidden">
+      <div className="md:hidden">
         <Container>
           <Heading
             text={"New Arrival"}

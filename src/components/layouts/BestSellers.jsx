@@ -41,6 +41,19 @@ const BestSellers = () => {
     nextArrow: <NextArrw />,
     prevArrow: <PrevArrw />,
   };
+  var tabSettings = {
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    rtl: true,
+    nextArrow: <NextArrw />,
+    prevArrow: <PrevArrw />,
+  };
 
   const [myProduct, setMyproduct] = useState([]);
 
@@ -80,8 +93,36 @@ const BestSellers = () => {
         </Container>
       </div>
 
-      {/* responsive-------------- */}
-      <div className="lg:hidden">
+      {/* responsive md-------------- */}
+      <div className="hidden md:block lg:hidden">
+        <Container>
+          <Heading
+            text={"Bestsellers"}
+            as={"h3"}
+            className={"font-bold text-[25px] py-3 text-center"}
+          />
+          <div className="bg-gray-100 h-[380px]">
+            <Slider {...tabSettings}>
+              {myProduct.map((item) => (
+                <div key={item.id} className="px-4">
+                  <SingleProduct
+                    BadgeText={"10%"}
+                    productTitle={item.title}
+                    productPrice={`$${item.price}`}
+                    imgSrc={item.thumbnail}
+                    alt={item.title}
+                  />
+                </div>
+
+              ))}
+            </Slider>
+          </div>
+        </Container>
+      </div>
+      {/* responsive md--------------end */}
+
+      {/* responsive sm-------------- */}
+      <div className="md:hidden">
         <Container>
           <Heading
             text={"Bestsellers"}
@@ -100,12 +141,13 @@ const BestSellers = () => {
                     alt={item.title}
                   />
                 </div>
+
               ))}
             </Slider>
           </div>
         </Container>
       </div>
-      {/* responsive--------------end */}
+      {/* responsive sm--------------end */}
     </>
   );
 };
