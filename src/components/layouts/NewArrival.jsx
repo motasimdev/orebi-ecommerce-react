@@ -80,12 +80,12 @@ const NewArrival = () => {
 
       
       {/* responsive---------- */}
-      <div className="pb-6 lg:hidden">
+      <div className="lg:hidden">
         <Container>
           <Heading
             text={"New Arrival"}
             as={"h3"}
-            className={"font-bold text-[39px] py-3 text-center"}
+            className={"font-bold text-[25px] py-3 text-center"}
             />
           <div className="bg-gray-100 h-[350px]">
           <Slider {...mobileSettings}>
