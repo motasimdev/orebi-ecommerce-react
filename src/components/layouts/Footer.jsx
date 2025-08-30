@@ -6,6 +6,7 @@ import logo from "/src/assets/logo.png";
 import { Link } from "react-router";
 import Flex from "../Flex";
 import { FaCaretUp } from "react-icons/fa";
+import { FaRegCopyright } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -114,35 +115,35 @@ const Footer = () => {
         <Container>
           <div className="bg-gray-300 py-2 text-center">
             <a href="#" className="text-sm">
-            <FaCaretUp className="m-auto" />
+              <FaCaretUp className="m-auto" />
               Tap to Top
             </a>
           </div>
-          <Flex className={"p-3"}>
+          <Flex className={"p-3 pl-5"}>
             <div className="w-[50%]">
               <ul>
                 <Link to={"/"}>
-                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                  <li className="hover:text-[#262626] text-black text-sm pb-3">
                     Orebi.com
                   </li>
                 </Link>
                 <Link to={"/"}>
-                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                  <li className="hover:text-[#262626] text-black text-sm pb-3">
                     Your Lists
                   </li>
                 </Link>
                 <Link to={"/"}>
-                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                  <li className="hover:text-[#262626] text-black text-sm pb-3">
                     Gift Cards
                   </li>
                 </Link>
                 <Link to={"/"}>
-                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                  <li className="hover:text-[#262626] text-black text-sm pb-3">
                     Find a Gift
                   </li>
                 </Link>
                 <Link to={"/"}>
-                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                  <li className="hover:text-[#262626] text-black text-sm pb-3">
                     Browsing History
                   </li>
                 </Link>
@@ -156,27 +157,27 @@ const Footer = () => {
             <div className="w-[50%]">
               <ul>
                 <Link to={"/"}>
-                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                  <li className="hover:text-[#262626] text-black text-sm pb-3">
                     Your Orders
                   </li>
                 </Link>
                 <Link to={"/"}>
-                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                  <li className="hover:text-[#262626] text-black text-sm pb-3">
                     Orebi Live
                   </li>
                 </Link>
                 <Link to={"/"}>
-                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                  <li className="hover:text-[#262626] text-black text-sm pb-3">
                     Registry & Gift List
                   </li>
                 </Link>
                 <Link to={"/"}>
-                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                  <li className="hover:text-[#262626] text-black text-sm pb-3">
                     Your Account
                   </li>
                 </Link>
                 <Link to={"/"}>
-                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                  <li className="hover:text-[#262626] text-black text-sm pb-3">
                     Customer Service
                   </li>
                 </Link>
@@ -189,9 +190,29 @@ const Footer = () => {
             </div>
           </Flex>
           <div className="bg-gray-500 py-3">
-            <div className="text-center flex items-center">
+            <div className="text-center flex items-center justify-center gap-x-1">
               <p className="text-sm font-medium">Already a customer?</p>
-              <a href="#" className="text-sm font-medium">Sign in</a>
+              <a href="#" className="text-sm font-medium">
+                Sign in
+              </a>
+            </div>
+            <div className="px-5">
+              <ul className="flex items-center gap-x-2 justify-center">
+                <Link to={"/"}>
+                  <li className="hover:text-[#262626] text-black text-[10px]">
+                    Condition of Use
+                  </li>
+                </Link>
+                <Link to={"/"}>
+                  <li className="hover:text-[#262626] text-black text-[10px]">
+                    Privacy Notice
+                  </li>
+                </Link>
+              </ul>
+              <div className="flex items-center justify-center">
+                <FaRegCopyright className="text-[10px]" />
+                <p className="text-[10px] pl-2">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+              </div>
             </div>
           </div>
         </Container>
