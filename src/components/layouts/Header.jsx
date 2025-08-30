@@ -199,14 +199,14 @@ const Header = () => {
                 </button>
                 {logIn && (
                   <>
-                  <div
-                    className="fixed bg-transparent inset-0 z-10"
-                    onClick={() => setLogin(false)}
-                  ></div>
-                  <div className="absolute top-4.5 right-0 bg-teal-100 z-30 w-[80px] p-2">
-                    <h3>Log In</h3>
-                    <h3>Sign Up</h3>
-                  </div>
+                    <div
+                      className="fixed bg-transparent inset-0 z-10"
+                      onClick={() => setLogin(false)}
+                    ></div>
+                    <div className="absolute top-4.5 right-0 bg-teal-100 z-30 w-[80px] p-2">
+                      <h3>Log In</h3>
+                      <h3>Sign Up</h3>
+                    </div>
                   </>
                 )}
               </div>
@@ -219,13 +219,17 @@ const Header = () => {
                   <FaShoppingCart />
                 </button>
                 {cart && (
-                    <>
-                  <div className="absolute top-4.5 right-[-9px] bg-teal-100 z-30 w-[210px] h-[500px] p-2">
-                    <h3>Item:</h3>
-                    <h3>Item Title:</h3>
-                    <h3>Item Price:</h3>
-                  </div>
-                    </>
+                  <>
+                    <div
+                      className="fixed bg-transparent inset-0 z-10"
+                      onClick={() => setCart(false)}
+                    ></div>
+                    <div className="absolute top-4.5 right-[-9px] bg-teal-100 z-30 w-[210px] h-[500px] p-2">
+                      <h3>Item:</h3>
+                      <h3>Item Title:</h3>
+                      <h3>Item Price:</h3>
+                    </div>
+                  </>
                 )}
               </div>
             </div>
