@@ -45,14 +45,14 @@ const Banner = () => {
           <div>
             <div className="">
               <Link to={"/"}>
-                <div className="bg-[url(/src/assets/rsz_banner.jpg)] h-[600px] bg-no-repeat bg-center bg-cover"></div>
+                <div className="bg-[url(/src/assets/banner.png)] h-[150px] bg-no-repeat bg-center bg-cover"></div>
               </Link>
             </div>
           </div>
           <div>
             <div className="">
               <Link to={"/"}>
-                <div className="bg-[url(/src/assets/rsz_banner.jpg)] h-[600px] bg-no-repeat bg-center bg-cover"></div>
+                <div className="bg-[url(/src/assets/banner.png)] h-[150px] bg-no-repeat bg-center bg-cover"></div>
               </Link>
             </div>
           </div>
