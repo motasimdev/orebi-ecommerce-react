@@ -7,6 +7,8 @@ import { Link } from "react-router";
 import Flex from "../Flex";
 import { FaCaretUp } from "react-icons/fa";
 import { FaRegCopyright } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa6";
+import { FaLinkedinIn, FaInstagram  } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -105,6 +107,14 @@ const Footer = () => {
 
             <div className="w-[20%]">
               <Image src={logo} alt={logo} />
+            </div>
+          </div>
+          <div className="flex items-center gap-x-4 pt-4">
+            <FaFacebookF/>
+            <FaLinkedinIn/>
+            <FaInstagram />
+            <div className="ml-auto">
+              <p className="font-normal text-sm text-[#6D6D6D]">2020 Orebi Minimal eCommerce Figma Template by Adveits</p>
             </div>
           </div>
         </Container>
@@ -211,7 +221,9 @@ const Footer = () => {
               </ul>
               <div className="flex items-center justify-center">
                 <FaRegCopyright className="text-[10px]" />
-                <p className="text-[10px] pl-2">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+                <p className="text-[10px] pl-2">
+                  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.
+                </p>
               </div>
             </div>
           </div>
