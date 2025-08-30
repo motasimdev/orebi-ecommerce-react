@@ -127,7 +127,7 @@ const SpecialOffers = () => {
             as={"h3"}
             className={"font-bold text-[25px] py-3 text-center"}
           />
-          <div className="bg-gray-100 h-[350px]">
+          <div className="bg-gray-100 h-[380px]">
             <Slider {...mobileSettings}>
               {myProduct.map((item) => (
                 <div key={item.id} className="px-4">

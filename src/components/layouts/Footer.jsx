@@ -2,13 +2,14 @@ import React from "react";
 import Container from "../Container";
 import Heading from "../Heading";
 import Image from "../Image";
-import logo from "/src/assets/logo.png"
+import logo from "/src/assets/logo.png";
 import { Link } from "react-router";
+import Flex from "../Flex";
 
 const Footer = () => {
   return (
     <>
-      <div className="bg-footerBg py-15">
+      <div className="bg-footerBg py-15 hidden lg:block">
         <Container>
           <div className={"flex justify-between"}>
             <div className="w-[10%]">
@@ -65,7 +66,7 @@ const Footer = () => {
               <Heading text={"Shop"} as={"h4"} className={"pb-4"} />
               <ul>
                 <li className="hover:text-[#262626] text-[#767676] text-sm pb-2.5">
-                  Privacy Policy  
+                  Privacy Policy
                 </li>
                 <li className="hover:text-[#262626] text-[#767676] text-sm pb-2.5">
                   Terms & Conditions
@@ -83,17 +84,106 @@ const Footer = () => {
             </div>
 
             <div className="w-[40%]">
-              <Heading text={"(052) 611-5711"} as={"h4"} className={"text-base font-bold text-[#262626] leading-7"}/>
-              <Heading text={"company@domain.com"} as={"h4"} className={"text-base font-bold text-[#262626] leading-7"}/>
-              <Heading text={"575 Crescent Ave. Quakertown, PA 18951"} as={"p"} className={"pt-6"}/>
+              <Heading
+                text={"(052) 611-5711"}
+                as={"h4"}
+                className={"text-base font-bold text-[#262626] leading-7"}
+              />
+              <Heading
+                text={"company@domain.com"}
+                as={"h4"}
+                className={"text-base font-bold text-[#262626] leading-7"}
+              />
+              <Heading
+                text={"575 Crescent Ave. Quakertown, PA 18951"}
+                as={"p"}
+                className={"pt-6"}
+              />
             </div>
 
             <div className="w-[20%]">
-              <Image src={logo} alt={logo}/>
+              <Image src={logo} alt={logo} />
             </div>
           </div>
         </Container>
       </div>
+
+      {/* responsive------ md sm  */}
+      <div className="bg-gray-300 lg:hidden">
+        <Container>
+          <Flex className={"p-3"}>
+            <div className="w-[50%]">
+              <ul>
+                <Link to={"/"}>
+                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                    Orebi.com
+                  </li>
+                </Link>
+                <Link to={"/"}>
+                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                    Your Lists
+                  </li>
+                </Link>
+                <Link to={"/"}>
+                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                    Gift Cards
+                  </li>
+                </Link>
+                <Link to={"/"}>
+                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                    Find a Gift
+                  </li>
+                </Link>
+                <Link to={"/"}>
+                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                    Browsing History
+                  </li>
+                </Link>
+                <Link to={"/"}>
+                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                    Your Returns
+                  </li>
+                </Link>
+              </ul>
+            </div>
+            <div className="w-[50%]">
+              <ul>
+                <Link to={"/"}>
+                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                    Your Orders
+                  </li>
+                </Link>
+                <Link to={"/"}>
+                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                    Orebi Live
+                  </li>
+                </Link>
+                <Link to={"/"}>
+                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                    Registry & Gift List
+                  </li>
+                </Link>
+                <Link to={"/"}>
+                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                    Your Account
+                  </li>
+                </Link>
+                <Link to={"/"}>
+                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                    Customer Service
+                  </li>
+                </Link>
+                <Link to={"/"}>
+                  <li className="hover:text-[#262626] text-black text-sm pb-2.5">
+                    Sell Products
+                  </li>
+                </Link>
+              </ul>
+            </div>
+          </Flex>
+        </Container>
+      </div>
+      {/* responsive------ md sm end */}
     </>
   );
 };
