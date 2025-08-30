@@ -79,8 +79,8 @@ const NewArrival = () => {
       </div>
 
       
-      {/* responsive---------- */}
-      <div className="lg:hidden">
+      {/* responsive md---------- */}
+      <div className="md:hidden">
         <Container>
           <Heading
             text={"New Arrival"}
@@ -104,7 +104,35 @@ const NewArrival = () => {
           </div>
         </Container>
       </div>
-      {/* responsive----------end */}
+      {/* responsive md----------end */}
+
+
+      {/* responsive sm---------- */}
+      <div className="hidden md:block lg:hidden">
+        <Container>
+          <Heading
+            text={"New Arrival"}
+            as={"h3"}
+            className={"font-bold text-[25px] py-3 text-center"}
+            />
+          <div className="bg-gray-100 h-[350px]">
+          <Slider {...mobileSettings}>
+            {myProduct.map((item) => (
+              <div key={item.id} className="px-4">
+                <SingleProduct
+                  BadgeText={"10%"}
+                  productTitle={item.title}
+                  productPrice={`$${item.price}`}
+                  imgSrc={item.thumbnail}
+                  alt={"watchA"}
+                  />
+              </div>
+            ))}
+          </Slider>
+          </div>
+        </Container>
+      </div>
+      {/* responsive sm----------end */}
     </>
   );
 };

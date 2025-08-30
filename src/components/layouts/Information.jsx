@@ -47,7 +47,7 @@ const Information = () => {
               <Heading
                 text={"Two years warranty"}
                 as={"p"}
-                className={"text-[#6D6D6D] text-[10px]"}
+                className={"text-[#6D6D6D] text-[8px]"}
               />
             </div>
             <div className="flex items-center gap-x-2">
@@ -55,7 +55,7 @@ const Information = () => {
               <Heading
                 text={"Free shipping"}
                 as={"p"}
-                className={"text-[#6D6D6D] text-[10px]"}
+                className={"text-[#6D6D6D] text-[8px]"}
               />
             </div>
             <div className="flex items-center gap-x-2">
@@ -63,7 +63,7 @@ const Information = () => {
               <Heading
                 text={"Return policy in 30 days"}
                 as={"p"}
-                className={"text-[#6D6D6D] text-[10px]"}
+                className={"text-[#6D6D6D] text-[8px]"}
               />
             </div>
           </Flex>

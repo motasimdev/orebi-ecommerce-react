@@ -100,8 +100,8 @@ const Ads = () => {
       </div>
 
 
-      {/* responsive------ */}
-      <div className="pt-[8px] pb-[8px] lg:hidden">
+      {/* responsive sm------ */}
+      <div className="pt-[8px] pb-[8px] md:hidden">
         <Container>
           <Flex className={"justify-between"}>
             <motion.div
@@ -155,7 +155,96 @@ const Ads = () => {
               }}
               >
                 <Link to={"/"}>
-                  <Image src={adTwo} alt={"adTwo"} className={"w-full pb-3"} />
+                  <Image src={adTwo} alt={"adTwo"} className={"w-full pb-[10px]"} />
+                </Link>
+              </motion.div>
+              <motion.div className=""
+              initial={{
+                x: 0,
+                opacity: 0
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0
+              }}
+              transition={{
+                duration: 1
+              }}
+              whileTap={{
+                scale: 0.9
+              }}
+              viewport={{
+                once: false,
+                amount: 0.2
+              }}
+              >
+                <Link to={"/"}>
+                  <Image src={adThree} alt={"adThree"} className={"w-full"} />
+                </Link>
+              </motion.div>
+            </div>
+          </Flex>
+        </Container>
+      </div>
+      {/* responsive sm------end */}
+
+
+      {/* responsive md------ */}
+      <div className="pt-[8px] pb-[8px] hidden md:block lg:hidden">
+        <Container>
+          <Flex className={"justify-between"}>
+            <motion.div
+              className="w-[49%]"
+              
+              //   ==================
+              initial={{
+                x: 0,
+                opacity: 0,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              viewport={{
+                once: false,
+                amount: 0.2,
+              }}
+              transition={{
+                duration: 1,
+              }}
+              whileTap={{
+                scale: 0.9,
+              }}
+            >
+              <Link to={"/"}>
+                <Image src={adONe} alt={"adOn e"} className={"w-full"} />
+              </Link>
+            </motion.div>
+            <div className="w-[49%]">
+              <motion.div className=""
+
+//   =====================
+              initial={{
+                x: 0,
+                opacity: 0
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0
+              }}
+              viewport={{
+                once: false,
+                amount: 0.2
+              }}
+              transition={{
+                duration: 1
+              }}
+              whileTap={{
+                scale: 0.9
+              }}
+              >
+                <Link to={"/"}>
+                  <Image src={adTwo} alt={"adTwo"} className={"w-full pb-5.5"} />
                 </Link>
               </motion.div>
               <motion.div className=""
