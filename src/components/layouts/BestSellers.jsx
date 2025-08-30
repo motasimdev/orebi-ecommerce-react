@@ -81,7 +81,7 @@ const BestSellers = () => {
       </div>
 
       {/* responsive-------------- */}
-      <div className="pb-6 lg:hidden">
+      <div className="lg:hidden">
         <Container>
           <Heading
             text={"Bestsellers"}
