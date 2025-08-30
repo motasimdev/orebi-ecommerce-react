@@ -101,7 +101,7 @@ const Ads = () => {
 
 
       {/* responsive------ */}
-      <div className="pt-[8px] pb-[65px] lg:hidden">
+      <div className="pt-[8px] pb-[8px] lg:hidden">
         <Container>
           <Flex className={"justify-between"}>
             <motion.div
