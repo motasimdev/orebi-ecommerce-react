@@ -28,6 +28,19 @@ const BestSellers = () => {
     nextArrow: <NextArrw />,
     prevArrow: <PrevArrw />
   };
+  var mobileSettings = {
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    rtl: true,
+    nextArrow: <NextArrw />,
+    prevArrow: <PrevArrw />
+  };
 
   const [myProduct, setMyproduct] = useState([]);
 
@@ -47,7 +60,7 @@ const BestSellers = () => {
           <Heading
             text={"Bestsellers"}
             as={"h3"}
-            className={"font-bold text-[39px] pb-15 pt-12"}
+            className={"font-bold text-[39px] pb-12 pt-12"}
           />
           <div className="-mx-2">
             <Slider {...settings}>
