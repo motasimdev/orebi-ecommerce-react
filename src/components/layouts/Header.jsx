@@ -113,6 +113,7 @@ const Header = () => {
 
       <div className="bg-[#F5F5F3] py-6 hidden lg:block">
         <Container>
+          {/* =======catagory========= */}
           <Flex className={"justify-between"}>
             <div className="relative">
               <button
@@ -131,18 +132,28 @@ const Header = () => {
               {category && (
                 <>
                   <div
-                    className="fixed bg-transparent inset-0 z-10"
+                    className="fixed bg-[#00000038] inset-0 z-10"
                     onClick={() => setCatagory(false)}
                   ></div>
-                  <div className="absolute top-4.5 left-0 bg-teal-100 z-30 w-[300px] h-[400px] p-2">
-                    <h3>Men's Fasion</h3>
-                    <h3>Women's Fasion</h3>
-                    <h3>Electronics</h3>
-                    <h3>Food</h3>
-                  </div>
                 </>
               )}
+              <div
+                className={`fixed top-0 left-0 bg-white z-30 w-[300px] h-[100vh] p-2 shadow-2xl transform transition-transform duration-300 
+                  ${category ? "translate-x-0" : "-translate-x-full"}`}
+              >
+                <button
+                  className="cursor-pointer"
+                  onClick={() => setCatagory(false)}
+                >
+                  <RxCross1 />
+                </button>
+                <h3>Men's Fasion</h3>
+                <h3>Women's Fasion</h3>
+                <h3>Electronics</h3>
+                <h3>Food</h3>
+              </div>
             </div>
+            {/* =======catagory======== */}
 
             <div className="relative">
               <input
@@ -153,6 +164,7 @@ const Header = () => {
               <FaSearch className="absolute right-4 top-1/2 -translate-y-1/2 " />
             </div>
 
+            {/* =========login signup ============ */}
             <div className="flex gap-x-3">
               <div className="relative">
                 <button
@@ -170,37 +182,53 @@ const Header = () => {
                       className="fixed bg-transparent inset-0 z-10"
                       onClick={() => setLogin(false)}
                     ></div>
-                    <div className="absolute top-4.5 right-0 bg-teal-100 z-30 w-[80px] p-2">
+                    <div className="absolute top-4.5 right-0 bg-gray-200 z-30 w-[120px] shadow-lg rounded p-2">
                       <h3>Log In</h3>
                       <h3>Sign Up</h3>
                     </div>
                   </>
                 )}
               </div>
+              {/* =========login signup end ============ */}
+
+              {/* ===========cart============ */}
               <div className="relative">
-                <button className="cursor-pointer" onClick={()=>setCart(!cart)}>
+                <button
+                  className="cursor-pointer"
+                  onClick={() => setCart(!cart)}
+                >
                   <FaShoppingCart />
                 </button>
                 {cart && (
                   <>
                     <div
-                      className="fixed bg-transparent inset-0 z-10"
+                      className="fixed bg-[#00000038] inset-0 z-10"
                       onClick={() => setCart(false)}
                     ></div>
-                    <div className="absolute top-4.5 right-[-9px] bg-teal-100 z-30 w-[210px] h-[500px] p-2">
-                      <h3>Item:</h3>
-                      <h3>Item Title:</h3>
-                      <h3>Item Price:</h3>
-                    </div>
                   </>
                 )}
+                <div
+                  className={`fixed top-0 right-0 w-[210px] h-[100vh] p-2 bg-white shadow-2xl z-30 transform transition-transform duration-300 
+                    ${cart ? "translate-x-0" : "translate-x-full"}`}
+                >
+                  <button
+                    className={" cursor-pointer"}
+                    onClick={() => setCart(false)}
+                  >
+                    <RxCross1 />
+                  </button>
+                  <h3>Item:</h3>
+                  <h3>Item Title:</h3>
+                  <h3>Item Price:</h3>
+                </div>
               </div>
+              {/* ===========cart end============ */}
             </div>
           </Flex>
         </Container>
       </div>
 
-      {/* responsive ------ */}
+      {/* ---------------responsive ------ */}
       <div className="bg-[#F5F5F3] py-6 lg:hidden px-3">
         <Container>
           <Flex className={"justify-between"}>
@@ -221,17 +249,26 @@ const Header = () => {
               {category && (
                 <>
                   <div
-                    className="fixed bg-transparent inset-0 z-10"
+                    className="fixed bg-[#00000038] inset-0 z-10"
                     onClick={() => setCatagory(false)}
                   ></div>
-                  <div className="absolute top-4.5 left-0 bg-teal-100 z-30 w-[100px] p-2">
-                    <h3>Men's Fasion</h3>
-                    <h3>Women's Fasion</h3>
-                    <h3>Electronics</h3>
-                    <h3>Food</h3>
-                  </div>
                 </>
               )}
+              <div
+                className={`fixed top-0 left-0 bg-gray-100 z-30 w-[150px] h-[100vh] p-2 transform transition-transform duration-300 
+                  ${category ? "translate-x-0" : "-translate-x-full"}`}
+              >
+                <button
+                  className={"cursor-pointer"}
+                  onClick={() => setCatagory(false)}
+                >
+                  <RxCross1 />
+                </button>
+                <h3>Men's Fasion</h3>
+                <h3>Women's Fasion</h3>
+                <h3>Electronics</h3>
+                <h3>Food</h3>
+              </div>
             </div>
 
             <div className="relative">
@@ -278,16 +315,22 @@ const Header = () => {
                 {cart && (
                   <>
                     <div
-                      className="fixed bg-transparent inset-0 z-10"
+                      className="fixed bg-[#00000038] inset-0 z-10"
                       onClick={() => setCart(false)}
                     ></div>
-                    <div className="absolute top-4.5 right-[-9px] bg-teal-100 z-30 w-[210px] h-[500px] p-2">
-                      <h3>Item:</h3>
-                      <h3>Item Title:</h3>
-                      <h3>Item Price:</h3>
-                    </div>
                   </>
                 )}
+                <div
+                  className={`fixed top-0 right-0 bg-white z-30 w-[150px] h-[100vh] p-2 transform transition-transform duration-300 
+                    ${cart ? "translate-x-0" : "translate-x-full"}`}
+                > 
+                <button className={"cursor-pointer"} onClick={()=>setCart(false)}>
+                  <RxCross1 />
+                </button>
+                  <h3>Item:</h3>
+                  <h3>Item Title:</h3>
+                  <h3>Item Price:</h3>
+                </div>
               </div>
             </div>
           </Flex>

@@ -68,7 +68,7 @@ const SpecialOffers = () => {
   return (
     <>
       <div className="pb-[110px] hidden lg:block">
-        <Container>
+        <Container className={"overflow-hidden"}>
           <Heading
             text={"Special Offers"}
             as={"h3"}
@@ -93,14 +93,14 @@ const SpecialOffers = () => {
       </div>
 
       {/* responsive md------------ */}
-      <div className="hidden md:block lg:hidden">
+      <div className="pb-5 hidden md:block lg:hidden">
         <Container>
           <Heading
             text={"Special Offers"}
             as={"h3"}
             className={"font-bold text-[25px] py-3 text-center"}
           />
-          <div className="bg-gray-100 h-[350px]">
+          <div className="bg-gray-100 h-[380px]">
             <Slider {...tabSettings}>
               {myProduct.map((item) => (
                 <div key={item.id} className="px-4">
@@ -119,7 +119,7 @@ const SpecialOffers = () => {
       </div>
       {/* responsive md------------end */}
 
-      {/* responsive------------ */}
+      {/* responsive sm------------ */}
       <div className="md:hidden">
         <Container>
           <Heading
@@ -144,7 +144,7 @@ const SpecialOffers = () => {
           </div>
         </Container>
       </div>
-      {/* responsive------------end */}
+      {/* responsive sm------------end */}
     </>
   );
 };

@@ -67,7 +67,7 @@ const NewArrival = () => {
   return (
     <>
       <div className="pb-6 hidden lg:block">
-        <Container>
+        <Container className={"overflow-hidden"}>
           <Heading
             text={"New Arrival"}
             as={"h3"}
