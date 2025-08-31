@@ -73,37 +73,40 @@ const Header = () => {
                 <Image src={logo} alt={"logo"} className={""} />
               </Link>
             </div>
-            {menu && (
-              <div className="">
-                <ul className="bg-amber-200 w-[200px] text-center p-5">
-                  <Link to={"/"}>
-                    <li className="hover:text-[#262626] text-[#767676] text-sm pb-3">
-                      Home
-                    </li>
-                  </Link>
-                  <Link to={"/shop"}>
-                    <li className="hover:text-[#262626] text-[#767676] text-sm pb-3">
-                      Shop
-                    </li>
-                  </Link>
-                  <Link to={"/About"}>
-                    <li className="hover:text-[#262626] text-[#767676] text-sm pb-3">
-                      About
-                    </li>
-                  </Link>
-                  <Link to={"/Contact"}>
-                    <li className="hover:text-[#262626] text-[#767676] text-sm pb-3">
-                      Contact
-                    </li>
-                  </Link>
-                  <Link to={"/Journal"}>
-                    <li className="hover:text-[#262626] text-[#767676] text-sm">
-                      Journal
-                    </li>
-                  </Link>
-                </ul>
-              </div>
-            )}
+
+            <div
+              className={`overflow-hidden transition-all duration-500 ease-in-out
+                
+                ${menu ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}
+            >
+              <ul className="bg-gray-200 text-center p-5">
+                <Link to={"/"}>
+                  <li className="hover:text-[#262626] text-[#767676] text-sm pb-3">
+                    Home
+                  </li>
+                </Link>
+                <Link to={"/shop"}>
+                  <li className="hover:text-[#262626] text-[#767676] text-sm pb-3">
+                    Shop
+                  </li>
+                </Link>
+                <Link to={"/About"}>
+                  <li className="hover:text-[#262626] text-[#767676] text-sm pb-3">
+                    About
+                  </li>
+                </Link>
+                <Link to={"/Contact"}>
+                  <li className="hover:text-[#262626] text-[#767676] text-sm pb-3">
+                    Contact
+                  </li>
+                </Link>
+                <Link to={"/Journal"}>
+                  <li className="hover:text-[#262626] text-[#767676] text-sm">
+                    Journal
+                  </li>
+                </Link>
+              </ul>
+            </div>
           </div>
         </Container>
       </div>
@@ -275,7 +278,7 @@ const Header = () => {
               <input
                 type="text"
                 placeholder="Search"
-                className="p-2 w-[150px] border-none focus:outline-0 bg-white"
+                className="p-1 w-[150px] border-none focus:outline-0 bg-white"
               />
               <FaSearch className="absolute right-2 top-1/2 -translate-y-1/2 " />
             </div>
@@ -323,10 +326,13 @@ const Header = () => {
                 <div
                   className={`fixed top-0 right-0 bg-white z-30 w-[150px] h-[100vh] p-2 transform transition-transform duration-300 
                     ${cart ? "translate-x-0" : "translate-x-full"}`}
-                > 
-                <button className={"cursor-pointer"} onClick={()=>setCart(false)}>
-                  <RxCross1 />
-                </button>
+                >
+                  <button
+                    className={"cursor-pointer"}
+                    onClick={() => setCart(false)}
+                  >
+                    <RxCross1 />
+                  </button>
                   <h3>Item:</h3>
                   <h3>Item Title:</h3>
                   <h3>Item Price:</h3>
