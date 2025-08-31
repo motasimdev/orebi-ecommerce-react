@@ -60,7 +60,6 @@ const Header = () => {
         </Container>
       </div>
 
-
       {/* responsive menu ----- */}
 
       <div className="py-[20px] px-3 lg:hidden">
@@ -115,13 +114,34 @@ const Header = () => {
       <div className="bg-[#F5F5F3] py-6 hidden lg:block">
         <Container>
           <Flex className={"justify-between"}>
-            <div className="flex items-center gap-x-4">
-              <BarCatagory />
-              <Heading
-                className={"text-[#262626] text-sm"}
-                text={"Shop by Category"}
-                as={"h3"}
-              />
+            <div className="relative">
+              <button
+                className="cursor-pointer"
+                onClick={() => setCatagory(!category)}
+              >
+                <div className="flex items-center gap-x-4">
+                  <BarCatagory />
+                  <Heading
+                    className={"text-[#262626] text-sm"}
+                    text={"Shop by Category"}
+                    as={"h3"}
+                  />
+                </div>
+              </button>
+              {category && (
+                <>
+                  <div
+                    className="fixed bg-transparent inset-0 z-10"
+                    onClick={() => setCatagory(false)}
+                  ></div>
+                  <div className="absolute top-4.5 left-0 bg-teal-100 z-30 w-[300px] h-[400px] p-2">
+                    <h3>Men's Fasion</h3>
+                    <h3>Women's Fasion</h3>
+                    <h3>Electronics</h3>
+                    <h3>Food</h3>
+                  </div>
+                </>
+              )}
             </div>
 
             <div className="relative">
@@ -134,11 +154,47 @@ const Header = () => {
             </div>
 
             <div className="flex gap-x-3">
-              <div className="flex">
-                <FaUser />
-                <FaAngleDown />
+              <div className="relative">
+                <button
+                  className="cursor-pointer"
+                  onClick={() => setLogin(!logIn)}
+                >
+                  <div className="flex">
+                    <FaUser />
+                    <FaAngleDown />
+                  </div>
+                </button>
+                {logIn && (
+                  <>
+                    <div
+                      className="fixed bg-transparent inset-0 z-10"
+                      onClick={() => setLogin(false)}
+                    ></div>
+                    <div className="absolute top-4.5 right-0 bg-teal-100 z-30 w-[80px] p-2">
+                      <h3>Log In</h3>
+                      <h3>Sign Up</h3>
+                    </div>
+                  </>
+                )}
               </div>
-              <FaShoppingCart />
+              <div className="relative">
+                <button className="cursor-pointer" onClick={()=>setCart(!cart)}>
+                  <FaShoppingCart />
+                </button>
+                {cart && (
+                  <>
+                    <div
+                      className="fixed bg-transparent inset-0 z-10"
+                      onClick={() => setCart(false)}
+                    ></div>
+                    <div className="absolute top-4.5 right-[-9px] bg-teal-100 z-30 w-[210px] h-[500px] p-2">
+                      <h3>Item:</h3>
+                      <h3>Item Title:</h3>
+                      <h3>Item Price:</h3>
+                    </div>
+                  </>
+                )}
+              </div>
             </div>
           </Flex>
         </Container>
