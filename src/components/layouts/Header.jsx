@@ -258,11 +258,11 @@ const Header = () => {
                 </>
               )}
               <div
-                className={`fixed top-0 left-0 bg-gray-100 z-30 w-[150px] h-[100vh] p-2 transform transition-transform duration-300 
+                className={`fixed top-0 left-0 bg-gray-100 z-30 w-[150px] h-[100vh] p-2 pt-7 transform transition-transform duration-300 
                   ${category ? "translate-x-0" : "-translate-x-full"}`}
               >
                 <button
-                  className={"cursor-pointer"}
+                  className={"cursor-pointer absolute right-3 top-3"}
                   onClick={() => setCatagory(false)}
                 >
                   <RxCross1 />
@@ -300,7 +300,7 @@ const Header = () => {
                       className="fixed bg-transparent inset-0 z-10"
                       onClick={() => setLogin(false)}
                     ></div>
-                    <div className="absolute top-4.5 right-0 bg-teal-100 z-30 w-[80px] p-2">
+                    <div className="absolute top-4.5 right-0 bg-gray-200 z-30 w-[80px] p-2">
                       <h3>Log In</h3>
                       <h3>Sign Up</h3>
                     </div>
