@@ -6,12 +6,12 @@ import { IoIosArrowForward } from "react-icons/io";
 const ShopTitle = () => {
   return (
     <>
-      <div className="">
+      <div className="pt-[50px] pb-[60px]">
         <Container>
           <Heading
             text={"Products"}
             as={"p"}
-            className={"text-[49px] font-bold text-[#262626] pt-[50px]"}
+            className={"text-[49px] font-bold text-[#262626]"}
           />
           <div className="flex items-center pt-5 pb-[65px]">
             <Heading
