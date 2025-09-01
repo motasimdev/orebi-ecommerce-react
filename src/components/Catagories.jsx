@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { HiOutlinePlusSm, HiOutlineMinusSm } from "react-icons/hi";
-import { FaArrowRightLong, FaArrowDownLong  } from "react-icons/fa6";
+import { FaArrowRightLong, FaArrowDownLong } from "react-icons/fa6";
 
 const Catagories = () => {
   const [menu, setMenu] = useState(false);
-  const [subMenu, setSubmenu] =useState(false)
+  const [subMenu, setSubmenu] = useState(false);
   return (
     <>
       <div className="py-5">
@@ -31,15 +31,21 @@ const Catagories = () => {
             className={`pl-3 pb-3 
               ${menu ? "block" : "hidden"}`}
           >
-            <button className={"cursor-pointer"} onClick={()=>setSubmenu(!subMenu)}>
-
-            <h3 className={"font-normal text-base text-[#767676] pb-1"}>
-              Menu
-            </h3>
+            {/* ======== sub menu===== */}
+            <button
+              className={"cursor-pointer"}
+              onClick={() => setSubmenu(!subMenu)}
+            >
+              <h3 className={"font-normal text-base text-[#767676] pb-1"}>
+                Menu
+              </h3>
             </button>
-            <div className="">
-              <h3></h3>
+            <div className={`pl-3 ${subMenu ? "block" : "hidden"}`}>
+              <h3 className={"font-normal text-base text-[#767676] pb-1"}>
+                Sub menu
+              </h3>
             </div>
+            {/* ======== sub menu end===== */}
             <h3 className={"font-normal text-base text-[#767676] pb-1"}>
               Menu
             </h3>
