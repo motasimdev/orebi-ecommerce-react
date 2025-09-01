@@ -8,7 +8,6 @@ const Shop = () => {
   return (
     <>
     <ShopTitle/>
-    <SingleProduct imgSrc={img}/>
     </>
   )
 }
