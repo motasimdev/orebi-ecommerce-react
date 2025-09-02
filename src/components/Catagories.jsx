@@ -5,8 +5,15 @@ import { FaArrowRightLong, FaArrowDownLong } from "react-icons/fa6";
 const Catagories = () => {
   const [menu, setMenu] = useState(false);
   const [subMenu, setSubmenu] = useState(false);
+
   const [menu2, setMenu2] = useState(false);
   const [subMenu2, setSubmenu2] = useState(false);
+
+  const [menu3, setMenu3] = useState(false);
+  const [subMenu3, setSubmenu3] = useState(false);
+
+  const [menu4, setMenu4] = useState(false);
+  const [subMenu4, setSubmenu4] = useState(false);
   return (
     <>
       <div className="py-5">
@@ -129,13 +136,13 @@ const Catagories = () => {
 
         {/* ===========3========== */}
         <div className="border-b border-b-[#d3d3d3] py-4">
-          <button className={"cursor-pointer"} onClick={() => setMenu2(!menu2)}>
+          <button className={"cursor-pointer"} onClick={() => setMenu3(!menu3)}>
             <div className="flex items-center justify-between w-[370px]">
               <p className={"font-normal text-base text-[#767676] pb-1"}>
-                Category 2
+                Category 3
               </p>
 
-              {menu2 ? (
+              {menu3 ? (
                 <FaArrowDownLong className={"text-[#767676] text-[12px]"} />
               ) : (
                 <FaArrowRightLong className={"text-[#767676] text-[12px]"} />
@@ -145,18 +152,18 @@ const Catagories = () => {
           {/* ========== menu ======= */}
           <div
             className={`pl-3 pb-3 
-              ${menu2 ? "block" : "hidden"}`}
+              ${menu3 ? "block" : "hidden"}`}
           >
             {/* ======== sub menu===== */}
             <button
               className={"cursor-pointer"}
-              onClick={() => setSubmenu2(!subMenu2)}
+              onClick={() => setSubmenu3(!subMenu3)}
             >
               <div className="flex justify-between items-center w-[358px]">
                 <h3 className={"font-normal text-base text-[#767676] pb-1"}>
                   Menu
                 </h3>
-                {subMenu2 ? (
+                {subMenu3 ? (
                   <HiOutlineMinusSm className={"text-[#767676]"} />
                 ) : (
                   <HiOutlinePlusSm className={"text-[#767676]"} />
@@ -165,7 +172,64 @@ const Catagories = () => {
             </button>
             <div
               className={`pl-3 
-              ${subMenu2 ? "block" : "hidden"}`}
+              ${subMenu3 ? "block" : "hidden"}`}
+            >
+              <h3 className={"font-normal text-base text-[#767676] pb-1"}>
+                Sub menu
+              </h3>
+            </div>
+            {/* ======== sub menu end===== */}
+            <h3 className={"font-normal text-base text-[#767676] pb-1"}>
+              Menu
+            </h3>
+            <h3 className={"font-normal text-base text-[#767676] pb-1"}>
+              Menu
+            </h3>
+            <h3 className={"font-normal text-base text-[#767676] pb-1"}>
+              Menu
+            </h3>
+          </div>
+        </div>
+
+        {/* ======== 4 ========== */}
+        <div className="border-b border-b-[#d3d3d3] py-4">
+          <button className={"cursor-pointer"} onClick={() => setMenu4(!menu4)}>
+            <div className="flex items-center justify-between w-[370px]">
+              <p className={"font-normal text-base text-[#767676] pb-1"}>
+                Category 4
+              </p>
+
+              {menu4 ? (
+                <FaArrowDownLong className={"text-[#767676] text-[12px]"} />
+              ) : (
+                <FaArrowRightLong className={"text-[#767676] text-[12px]"} />
+              )}
+            </div>
+          </button>
+          {/* ========== menu ======= */}
+          <div
+            className={`pl-3 pb-3 
+              ${menu4 ? "block" : "hidden"}`}
+          >
+            {/* ======== sub menu===== */}
+            <button
+              className={"cursor-pointer"}
+              onClick={() => setSubmenu4(!subMenu4)}
+            >
+              <div className="flex justify-between items-center w-[358px]">
+                <h3 className={"font-normal text-base text-[#767676] pb-1"}>
+                  Menu
+                </h3>
+                {subMenu4 ? (
+                  <HiOutlineMinusSm className={"text-[#767676]"} />
+                ) : (
+                  <HiOutlinePlusSm className={"text-[#767676]"} />
+                )}
+              </div>
+            </button>
+            <div
+              className={`pl-3 
+              ${subMenu4 ? "block" : "hidden"}`}
             >
               <h3 className={"font-normal text-base text-[#767676] pb-1"}>
                 Sub menu
