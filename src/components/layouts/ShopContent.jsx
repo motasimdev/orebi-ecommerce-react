@@ -4,6 +4,7 @@ import Container from "../Container";
 import ColorCatagry from "../ColorCatagry";
 import BrandCatagry from "../BrandCatagry";
 import PriceCatgry from "../PriceCatgry";
+import { FaCaretDown } from "react-icons/fa";
 
 const ShopContent = () => {
   return (
@@ -22,29 +23,32 @@ const ShopContent = () => {
                 <h3 className="font-normal text-base text-[#767676]">
                   Sort by:
                 </h3>
-                <select
-                  name="choice"
-                  className="border border-[#F0F0F0] px-5 py-2 appearance-none focus:outline-none focus:border-gray-400"
-                >
-                  <option
-                    value="Feature"
-                    className="font-normal text-base text-[#767676]"
+                <div className="relative">
+                  <select
+                    name="choice"
+                    className="border border-[#F0F0F0] px-5 py-2 appearance-none focus:outline-none focus:border-gray-400 cursor-pointer"
                   >
-                    Featured
-                  </option>
-                  <option
-                    value="Price Low to High"
-                    className="font-normal text-base text-[#767676]"
-                  >
-                    Price Low to High
-                  </option>
-                  <option
-                    value="Price High to Low"
-                    className="font-normal text-base text-[#767676]"
-                  >
-                    Price High to Low
-                  </option>
-                </select>
+                    <option
+                      value="Feature"
+                      className="font-normal text-base text-[#767676]"
+                    >
+                      Featured
+                    </option>
+                    <option
+                      value="Price Low to High"
+                      className="font-normal text-base text-[#767676]"
+                    >
+                      Price Low to High
+                    </option>
+                    <option
+                      value="Price High to Low"
+                      className="font-normal text-base text-[#767676]"
+                    >
+                      Price High to Low
+                    </option>
+                  </select>
+                  <FaCaretDown className="absolute top-1/2 -translate-y-1/2 right-3 pointer-events-none" />
+                </div>
               </div>
             </div>
           </div>
