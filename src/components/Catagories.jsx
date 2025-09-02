@@ -14,6 +14,9 @@ const Catagories = () => {
 
   const [menu4, setMenu4] = useState(false);
   const [subMenu4, setSubmenu4] = useState(false);
+
+  const [menu5, setMenu5] = useState(false);
+  const [subMenu5, setSubmenu5] = useState(false);
   return (
     <>
       <div className="py-5">
@@ -230,6 +233,63 @@ const Catagories = () => {
             <div
               className={`pl-3 
               ${subMenu4 ? "block" : "hidden"}`}
+            >
+              <h3 className={"font-normal text-base text-[#767676] pb-1"}>
+                Sub menu
+              </h3>
+            </div>
+            {/* ======== sub menu end===== */}
+            <h3 className={"font-normal text-base text-[#767676] pb-1"}>
+              Menu
+            </h3>
+            <h3 className={"font-normal text-base text-[#767676] pb-1"}>
+              Menu
+            </h3>
+            <h3 className={"font-normal text-base text-[#767676] pb-1"}>
+              Menu
+            </h3>
+          </div>
+        </div>
+
+        {/* ========= 5 ======= */}
+        <div className="border-b border-b-[#d3d3d3] py-4">
+          <button className={"cursor-pointer"} onClick={() => setMenu5(!menu5)}>
+            <div className="flex items-center justify-between w-[370px]">
+              <p className={"font-normal text-base text-[#767676] pb-1"}>
+                Category 5
+              </p>
+
+              {menu5 ? (
+                <FaArrowDownLong className={"text-[#767676] text-[12px]"} />
+              ) : (
+                <FaArrowRightLong className={"text-[#767676] text-[12px]"} />
+              )}
+            </div>
+          </button>
+          {/* ========== menu ======= */}
+          <div
+            className={`pl-3 pb-3 
+              ${menu5 ? "block" : "hidden"}`}
+          >
+            {/* ======== sub menu===== */}
+            <button
+              className={"cursor-pointer"}
+              onClick={() => setSubmenu5(!subMenu5)}
+            >
+              <div className="flex justify-between items-center w-[358px]">
+                <h3 className={"font-normal text-base text-[#767676] pb-1"}>
+                  Menu
+                </h3>
+                {subMenu5 ? (
+                  <HiOutlineMinusSm className={"text-[#767676]"} />
+                ) : (
+                  <HiOutlinePlusSm className={"text-[#767676]"} />
+                )}
+              </div>
+            </button>
+            <div
+              className={`pl-3 
+              ${subMenu5 ? "block" : "hidden"}`}
             >
               <h3 className={"font-normal text-base text-[#767676] pb-1"}>
                 Sub menu
