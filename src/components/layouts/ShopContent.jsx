@@ -2,6 +2,7 @@ import React from "react";
 import Catagories from "../Catagories";
 import Container from "../Container";
 import ColorCatagry from "../ColorCatagry";
+import BrandCatagry from "../BrandCatagry";
 
 const ShopContent = () => {
   return (
@@ -12,6 +13,7 @@ const ShopContent = () => {
             <div className="">
               <Catagories />
               <ColorCatagry/>
+              <BrandCatagry/>
             </div>
             <div className=""></div>
           </div>
