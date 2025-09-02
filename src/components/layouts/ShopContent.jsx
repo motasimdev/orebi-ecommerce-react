@@ -3,6 +3,7 @@ import Catagories from "../Catagories";
 import Container from "../Container";
 import ColorCatagry from "../ColorCatagry";
 import BrandCatagry from "../BrandCatagry";
+import PriceCatgry from "../PriceCatgry";
 
 const ShopContent = () => {
   return (
@@ -14,6 +15,7 @@ const ShopContent = () => {
               <Catagories />
               <ColorCatagry/>
               <BrandCatagry/>
+              <PriceCatgry/>
             </div>
             <div className=""></div>
           </div>

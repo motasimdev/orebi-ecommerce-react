@@ -6,7 +6,7 @@ const BrandCatagry = () => {
     <>
       <div className="py-10">
         <div className="pb-3">
-          <h3 className={"font-bold text-xl text-[#262626]"}>Shop by Color</h3>
+          <h3 className={"font-bold text-xl text-[#262626]"}>Shop by Brand</h3>
         </div>
         <ul>
           <li className="flex items-center w-[370px] border-b border-b-[#D8D8D8] py-5">
