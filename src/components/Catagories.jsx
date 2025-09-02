@@ -19,7 +19,7 @@ const Catagories = () => {
   const [subMenu5, setSubmenu5] = useState(false);
   return (
     <>
-      <div className="py-5">
+      <div className="py-3">
         <h3 className={"font-bold text-xl text-[#262626] pb-5"}>
           Shop by Category
         </h3>

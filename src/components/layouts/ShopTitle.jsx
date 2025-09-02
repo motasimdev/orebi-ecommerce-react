@@ -6,7 +6,7 @@ import { IoIosArrowForward } from "react-icons/io";
 const ShopTitle = () => {
   return (
     <>
-      <div className="pt-[50px] pb-[60px]">
+      <div className="pt-[50px] pb-[30px]">
         <Container>
           <Heading
             text={"Products"}
