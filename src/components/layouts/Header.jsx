@@ -81,27 +81,27 @@ const Header = () => {
             >
               <ul className="bg-gray-200 text-center p-5">
                 <Link to={"/"}>
-                  <li className="hover:text-[#262626] text-[#767676] text-sm pb-3">
+                  <li className="hover:text-[#262626] text-[#767676] text-sm py-1.5">
                     Home
                   </li>
                 </Link>
                 <Link to={"/shop"}>
-                  <li className="hover:text-[#262626] text-[#767676] text-sm pb-3">
+                  <li className="hover:text-[#262626] text-[#767676] text-sm py-1.5">
                     Shop
                   </li>
                 </Link>
                 <Link to={"/About"}>
-                  <li className="hover:text-[#262626] text-[#767676] text-sm pb-3">
+                  <li className="hover:text-[#262626] text-[#767676] text-sm py-1.5">
                     About
                   </li>
                 </Link>
                 <Link to={"/Contact"}>
-                  <li className="hover:text-[#262626] text-[#767676] text-sm pb-3">
+                  <li className="hover:text-[#262626] text-[#767676] text-sm py-1.5">
                     Contact
                   </li>
                 </Link>
                 <Link to={"/Journal"}>
-                  <li className="hover:text-[#262626] text-[#767676] text-sm">
+                  <li className="hover:text-[#262626] text-[#767676] text-sm py-1.5">
                     Journal
                   </li>
                 </Link>

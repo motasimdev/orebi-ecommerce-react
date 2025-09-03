@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Catagories from "../Catagories";
 import Container from "../Container";
 import ColorCatagry from "../ColorCatagry";
@@ -6,9 +6,19 @@ import BrandCatagry from "../BrandCatagry";
 import PriceCatgry from "../PriceCatgry";
 import { FaCaretDown } from "react-icons/fa";
 import SingleProduct from "../SingleProduct";
+import axios from "axios";
 
 const ShopContent = () => {
-  
+  const [myProducts, setMyproducts] = useState([]);
+
+  useEffect(() => {
+    async function all() {
+      const data = await axios.get("https://dummyjson.com/products/");
+      setMyproducts(data.data.products);
+    }
+    all();
+  }, []);
+
   return (
     <>
       <div className="">
@@ -82,8 +92,20 @@ const ShopContent = () => {
                 </div>
               </div>
 
-                {/* ======================================== */}
-                <SingleProduct />
+              {/* ======================================== */}
+              <div className=" flex flex-wrap justify-between gap-y-3">
+                {myProducts.map((item) => (
+                  <div className="w-[300px]" key={item.id}>
+                    <SingleProduct
+                      imgSrc={item.thumbnail}
+                      alt={item.thumbnail}
+                      productPrice={item.price}
+                      productTitle={item.title}
+                      BadgeText={"10%"}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </Container>
