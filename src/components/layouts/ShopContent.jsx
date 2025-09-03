@@ -13,7 +13,7 @@ const ShopContent = () => {
 
   useEffect(() => {
     async function all() {
-      const data = await axios.get("https://dummyjson.com/products/");
+      const data = await axios.get("https://dummyjson.com/products?limit=15&skip=10&select=title,price,thumbnail");
       setMyproducts(data.data.products);
     }
     all();
@@ -38,7 +38,7 @@ const ShopContent = () => {
                 <div className="relative">
                   <select
                     name="choice"
-                    className="border border-[#F0F0F0] px-5 py-2 appearance-none focus:outline-none focus:border-gray-400 cursor-pointer"
+                    className="border border-[#F0F0F0] w-[200px] px-5 py-2 appearance-none focus:outline-none focus:border-gray-400 cursor-pointer"
                   >
                     <option
                       value="Feature"
@@ -93,7 +93,7 @@ const ShopContent = () => {
               </div>
 
               {/* ======================================== */}
-              <div className=" flex flex-wrap justify-between gap-y-3">
+              <div className=" flex flex-wrap justify-between gap-y-3 pt-13">
                 {myProducts.map((item) => (
                   <div className="w-[300px]" key={item.id}>
                     <SingleProduct
