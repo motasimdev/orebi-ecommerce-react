@@ -15,7 +15,7 @@ const SingleProduct = ({BadgeText, imgSrc, alt, productTitle, productPrice }) =>
         <Badge className={"absolute top-4 left-4"} text={BadgeText} />
 
         {/* ================ */}
-        <div className="bg-white p-7.5 absolute bottom-9 left-0 w-full translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+        <div className="bg-white p-7.5 hidden lg:block absolute bottom-9 left-0 w-full translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
           <Link>
             <Flex className={"justify-end gap-x-3 "}>
               <Heading text={"Add to Wish List"} as={"p"} className={"text-[#767676] text-base"} />
@@ -37,8 +37,8 @@ const SingleProduct = ({BadgeText, imgSrc, alt, productTitle, productPrice }) =>
         </div>
         <div className="py-3">
                 <Flex className={"justify-between"}>
-                    <Heading text={productTitle} as={"h3"} className={"text-5 text-[#262626] font-bold"}/>
-                    <Heading text={productPrice} as={"h3"} className={"text-4 text-[#767676]"}/>
+                    <Heading text={productTitle} as={"h3"} className={"text-[12px] lg:text-5 text-[#262626] font-bold"}/>
+                    <Heading text={productPrice} as={"h3"} className={"text-[10px] lg:text-4 text-[#767676]"}/>
                 </Flex>
         </div>
       </div>
