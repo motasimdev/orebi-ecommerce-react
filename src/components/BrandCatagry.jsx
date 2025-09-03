@@ -9,36 +9,48 @@ const BrandCatagry = () => {
           <h3 className={"font-bold text-xl text-[#262626]"}>Shop by Brand</h3>
         </div>
         <ul>
+          <Link to={""}>
           <li className="flex items-center w-[370px] border-b border-b-[#D8D8D8] py-5">
-            <Link className="text-base font-normal text-[#767676] pl-2">
+            <p className="text-base font-normal text-[#767676] pl-2">
               Brand 1
-            </Link>
+            </p>
           </li>
+          </Link>
+          <Link to={""}>
           <li className="flex items-center w-[370px] border-b border-b-[#D8D8D8] py-5">
-            <Link className="text-base font-normal text-[#767676] pl-2">
+            <p className="text-base font-normal text-[#767676] pl-2">
               Brand 2
-            </Link>
+            </p>
           </li>
+          </Link>
+          <Link to={""}>
           <li className="flex items-center w-[370px] border-b border-b-[#D8D8D8] py-5">
-            <Link className="text-base font-normal text-[#767676] pl-2">
+            <p className="text-base font-normal text-[#767676] pl-2">
               Brand 3
-            </Link>
+            </p>
           </li>
+          </Link>
+          <Link to={""}>
           <li className="flex items-center w-[370px] border-b border-b-[#D8D8D8] py-5">
-            <Link className="text-base font-normal text-[#767676] pl-2">
+            <p className="text-base font-normal text-[#767676] pl-2">
               Brand 4
-            </Link>
+            </p>
           </li>
+          </Link>
+          <Link to={""}>
           <li className="flex items-center w-[370px] border-b border-b-[#D8D8D8] py-5">
-            <Link className="text-base font-normal text-[#767676] pl-2">
+            <p className="text-base font-normal text-[#767676] pl-2">
               Brand 5
-            </Link>
+            </p>
           </li>
+          </Link>
+          <Link to={""}>
           <li className="flex items-center w-[370px] border-b border-b-[#D8D8D8] py-5">
-            <Link className="text-base font-normal text-[#767676] pl-2">
+            <p className="text-base font-normal text-[#767676] pl-2">
               Brand 6
-            </Link>
+            </p>
           </li>
+          </Link>
         </ul>
       </div>
     </>
