@@ -30,36 +30,36 @@ const ShopContent = () => {
               <BrandCatagry />
               <PriceCatgry />
             </div>
-            <div className="lg:w-[70%] lg:pt-3">
+            <div className="lg:w-[70%] lg:pt-3 pl-3">
               <div className="flex items-center gap-4 justify-end">
-                <h3 className="font-normal text-base text-[#767676]">
+                <h3 className="font-normal lg:text-base text-[10px] text-[#767676]">
                   Sort by:
                 </h3>
                 <div className="relative">
                   <select
                     name="choice"
-                    className="border border-[#F0F0F0] w-[200px] px-5 py-2 appearance-none focus:outline-none focus:border-gray-400 cursor-pointer"
+                    className="border border-[#F0F0F0] w-[90px] lg:w-[200px] text-[#767676fd] text-[10px] px-2 lg:px-5 py-1 lg:py-2 appearance-none focus:outline-none focus:border-gray-300 cursor-pointer"
                   >
                     <option
                       value="Feature"
-                      className="font-normal text-base text-[#767676]"
+                      className="font-normal text-[10px] lg:text-base text-[#767676]"
                     >
                       Featured
                     </option>
                     <option
                       value="Price Low to High"
-                      className="font-normal text-base text-[#767676]"
+                      className="font-normal text-[10px] lg:text-base text-[#767676]"
                     >
                       Price Low to High
                     </option>
                     <option
                       value="Price High to Low"
-                      className="font-normal text-base text-[#767676]"
+                      className="font-normal text-[10px] lg:text-base text-[#767676]"
                     >
                       Price High to Low
                     </option>
                   </select>
-                  <FaCaretDown className="absolute top-1/2 -translate-y-1/2 right-3 pointer-events-none text-[#737373]" />
+                  <FaCaretDown className="absolute top-1/2 -translate-y-1/2 right-1 lg:right-3 pointer-events-none text-[#737373]" />
                 </div>
                 <div className="relative flex items-center gap-4">
                   <h3 className="font-normal text-base text-[#767676]">
