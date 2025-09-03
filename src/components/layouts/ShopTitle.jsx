@@ -13,7 +13,7 @@ const ShopTitle = () => {
             as={"p"}
             className={"text-[25px] lg:text-[49px] font-bold text-[#262626]"}
           />
-          <div className="flex items-center pt-1 lg:pt-5 pb-[65px]">
+          <div className="flex items-center pt-1 lg:pt-5 lg:pb-[65px]">
             <Heading
               text={"Home"}
               as={"p"}

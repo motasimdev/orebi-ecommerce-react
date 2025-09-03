@@ -24,13 +24,13 @@ const ShopContent = () => {
       <div className="">
         <Container>
           <div className="flex items-start">
-            <div className="w-[30%]">
+            <div className="hidden lg:w-[30%]">
               <Catagories />
               <ColorCatagry />
               <BrandCatagry />
               <PriceCatgry />
             </div>
-            <div className="w-[70%] pt-3">
+            <div className="lg:w-[70%] lg:pt-3">
               <div className="flex items-center gap-4 justify-end">
                 <h3 className="font-normal text-base text-[#767676]">
                   Sort by:
