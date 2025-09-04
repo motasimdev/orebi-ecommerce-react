@@ -10,12 +10,14 @@ import { Link } from "react-router";
 import { HiBars3CenterLeft } from "react-icons/hi2";
 import ContactTitle from "../layouts/ContactTitle";
 import ContactForm from "../layouts/ContactForm";
+import GoogleMap from "../layouts/GoogleMap";
 const Contact = () => {
   const [menu, setMenu] = useState(false);
   return (
     <>
     <ContactTitle/>
     <ContactForm/>
+    <GoogleMap/>
     </>
   );
 };
