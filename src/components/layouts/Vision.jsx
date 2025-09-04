@@ -49,7 +49,6 @@ const Vision = () => {
             {/* ================================================ */}
             <motion.div
               className="w-[33%]"
-
               // =======animate========
               initial={{
                 y: -70,
@@ -146,92 +145,95 @@ const Vision = () => {
               whileTap={{
                 scale: 0.9,
               }}
-              >
+            >
               <Heading
                 text={"Our Vision"}
                 as={"h3"}
                 className={"font-bold text-[20px] text-[#262626]"}
-                />
+              />
               <Heading
                 text={
                   "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an   printer took a galley of type and scrambled it to make a type specimen book."
                 }
                 as={"p"}
                 className={"font-normal text-[12px] text-[#767676] leading-5"}
-                />
+              />
             </motion.div>
 
             {/* ================================================ */}
-            <motion.div
-              className="w-[300px] md:w-[400px] h-[100px] m-auto mt-8"
-              
-              // =======animate========
-              initial={{
-                y: -50,
-                opacity: 0,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              viewport={{
-                once: false,
-                amount: 0.1,
-              }}
-              transition={{
-                duration: 1,
-              }}
+            <div className="mt-[40px]">
+              <motion.div
+                className="w-[300px] md:w-[400px] h-[100px] m-auto"
+                // =======animate========
+                initial={{
+                  y: -50,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                viewport={{
+                  once: false,
+                  amount: 0.1,
+                }}
+                transition={{
+                  duration: 1,
+                }}
               >
-              <Heading
-                text={"Our Vision"}
-                as={"h3"}
-                className={"font-bold text-[20px] text-[#262626]"}
-              />
-              <Heading
-                text={
-                  "Our Story Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic."
-                }
-                as={"p"}
-                className={"font-normal text-xs text-[#767676] leading-5"}
-              />
-            </motion.div>
+                <Heading
+                  text={"Our Vision"}
+                  as={"h3"}
+                  className={"font-bold text-[20px] text-[#262626]"}
+                />
+                <Heading
+                  text={
+                    "Our Story Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic."
+                  }
+                  as={"p"}
+                  className={"font-normal text-xs text-[#767676] leading-5"}
+                />
+              </motion.div>
+            </div>
 
             {/* ================================================= */}
-            <motion.div
-              className="w-[300px] md:w-[400px] h-[100px] m-auto mt-8"
-              //   =====animate======
-              initial={{
-                y: -50,
-                opacity: 0,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              viewport={{
-                once: false,
-                amount: 0.1,
-              }}
-              transition={{
-                duration: 1,
-              }}
-              whileTap={{
-                scale: 0.9,
-              }}
+            <div className="mt-[80px]">
+              <motion.div
+                className="w-[300px] md:w-[400px] h-[100px] m-auto "
+                //   =====animate======
+                initial={{
+                  y: -50,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                viewport={{
+                  once: false,
+                  amount: 0.1,
+                }}
+                transition={{
+                  duration: 1,
+                }}
+                whileTap={{
+                  scale: 0.9,
+                }}
               >
-              <Heading
-                text={"Our Vision"}
-                as={"h3"}
-                className={"font-bold text-[20px] text-[#262626]"}
+                <Heading
+                  text={"Our Vision"}
+                  as={"h3"}
+                  className={"font-bold text-[20px] text-[#262626]"}
                 />
-              <Heading
-                text={
-                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
-                }
-                as={"p"}
-                className={"font-normal text-xs text-[#767676] leading-5"}
-              />
-            </motion.div>
+                <Heading
+                  text={
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
+                  }
+                  as={"p"}
+                  className={"font-normal text-xs text-[#767676] leading-5"}
+                />
+              </motion.div>
+            </div>
           </div>
         </Container>
       </div>
