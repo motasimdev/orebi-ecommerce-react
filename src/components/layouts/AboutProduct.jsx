@@ -11,7 +11,7 @@ import Heading from "../Heading";
 const AboutProduct = () => {
   return (
     <>
-      <div className="pt-[50px] pb-[65px]">
+      <div className="pt-7 lg:pt-[50px] pb-8 lg:pb-[65px]">
         <Container>
           <Flex className={"justify-between"}>
 
@@ -29,8 +29,8 @@ const AboutProduct = () => {
                 x: 0,
               }}
               viewport={{
-                once: false,
-                amount: 0.2,
+                once: true,
+                amount: 0.1,
               }}
               transition={{
                 duration: 1,
@@ -62,8 +62,8 @@ const AboutProduct = () => {
                 x: 0
               }}
               viewport={{
-                once: false,
-                amount: 0.2
+                once: true,
+                amount: 0.1
               }}
               transition={{
                 duration: 1
