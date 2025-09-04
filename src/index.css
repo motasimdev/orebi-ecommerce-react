@@ -12,3 +12,6 @@ body{
   color: black !important;
   font-size: 30px;
 }
+.text-justify{
+  text-align: justify;
+}

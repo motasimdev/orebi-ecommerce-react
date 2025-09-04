@@ -160,14 +160,14 @@ const AboutProduct = () => {
         {/* ------------responsiv end-------------- */}
 
       {/* ======================================2nd================================================= */}
-      <div className="py-[50px]">
+      <div className="py-1 lg:py-[50px] px-4 lg:px-0 w-[300px] md:w-[600px] lg:w-auto m-auto">
         <Container>
           <Heading
             text={
               "Orebi is one of the world’s leading ecommerce brands and is internationally recognized for celebrating the essence of classic Worldwide cool looking style."
             }
             as={"h3"}
-            className={"font-normal text-[32px] text-[#262626] leading-[52px]"}
+            className={" font-normal text-[16px] lg:text-[32px] text-[#262626] text-center lg:text-left leading-8 lg:leading-[52px]"}
             />
         </Container>
       </div>
