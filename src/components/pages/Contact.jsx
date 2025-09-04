@@ -8,11 +8,12 @@ import Heading from "../Heading";
 import { FaSearch, FaUser, FaAngleDown, FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router";
 import { HiBars3CenterLeft } from "react-icons/hi2";
+import ContactTitle from "../layouts/ContactTitle";
 const Contact = () => {
   const [menu, setMenu] = useState(false);
   return (
     <>
-    
+    <ContactTitle/>
     </>
   );
 };
