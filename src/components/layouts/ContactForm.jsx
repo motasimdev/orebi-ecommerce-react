@@ -6,9 +6,9 @@ import Heading from "../Heading";
 const ContactForm = () => {
   return (
     <>
-      <div className="py-2 pl-3 lg:pl-0">
+      <div className="py-2 pl-3 lg:pl-0 mt-4 lg:mt-0">
         <Container>
-          <div className="mb-10">
+          <div className="mb-3 lg:mb-10">
             <form action="">
               <Heading
                 text={"Fill up a Form"}
