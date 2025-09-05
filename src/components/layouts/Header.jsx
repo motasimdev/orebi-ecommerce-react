@@ -276,6 +276,9 @@ const Header = () => {
                   <RxCross1 />
                 </button>
                 <Catagories/>
+                <ColorCatagry/>
+                <PriceCatgry/>
+                <BrandCatagry/>
               </div>
             </div>
 
