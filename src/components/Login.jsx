@@ -8,7 +8,7 @@ const Login = () => {
   return (
     <>
       <div className="pt-2 lg:pt-[50px] pb-2 lg:pb-[30px] pl-3 lg:pl-0">
-        <Container>
+        <Container className={"overflow-hidden"}>
           <Heading
             text={"Login"}
             as={"p"}
@@ -34,33 +34,33 @@ const Login = () => {
 
           {/* ========================== */}
 
-          <div className="w-[644px] py-[70px]">
+          <div className="w-[300px] lg:w-[644px] py-6 lg:py-[70px]">
             <Heading
               text={
                 "Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry's standard dummy text ever since the."
               }
               as={"h3"}
               className={
-                "text-[#767676] text-[39px] lg:text-[16px] font-normal"
+                "text-[#767676] text-[10px] lg:text-[16px] font-normal"
               }
             />
           </div>
           <div className="h-[1px] bg-[#D8D8D8]"></div>
 
-          <div className="py-[60px]">
+          <div className="py-5 lg:py-[60px]">
             <Heading
               text={"Returning Customer"}
               as={"p"}
-              className={"text-[#262626] text-[10px] lg:text-[39px] font-bold"}
+              className={"text-[#262626] text-[20px] lg:text-[39px] font-bold"}
             />
 
-            <Flex className={"gap-x-5 pt-10"}>
+            <Flex className={"gap-x-5 pt-5 lg:pt-10"}>
               <div className="">
                 <Heading
                   text={"Email address"}
                   as={"p"}
                   className={
-                    "text-[#262626] text-[39px] lg:text-[16px] font-bold"
+                    "text-[#262626] text-[12px] lg:text-[16px] font-bold"
                   }
                 />
                 <input
@@ -76,7 +76,7 @@ const Login = () => {
                   text={"Password"}
                   as={"p"}
                   className={
-                    "text-[#262626] text-[39px] lg:text-[16px] font-bold"
+                    "text-[#262626] text-[12px] lg:text-[16px] font-bold"
                   }
                 />
                 <input
@@ -88,39 +88,39 @@ const Login = () => {
                 />
               </div>
             </Flex>
-            <button className="cursor-pointer px-20 py-4 border border-[#2B2B2B]">
+            <button className="cursor-pointer px-10 lg:px-20 py-1 lg:py-4 border border-[#2B2B2B]">
               <Heading
                 text={"Log in"}
                 as={"p"}
                 className={
-                  "text-[#262626] text-[39px] lg:text-[14px] font-bold"
+                  "text-[#262626] text-[12px] lg:text-[14px] font-bold"
                 }
               />
             </button>
           </div>
           <div className="h-[1px] bg-[#D8D8D8]"></div>
-          <div className="py-[60px]">
+          <div className="py-6 lg:py-[60px]">
             <Heading
               text={"New Customer"}
               as={"h3"}
               className={"text-[#262626] text-[39px] lg:text-[39px] font-bold"}
             />
-            <div className="w-[644px] py-[50px]">
+            <div className="w-[300px] lg:w-[644px] py-[50px]">
               <Heading
                 text={
                     "Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry's standard dummy text ever since the."
                 }
                 as={"h3"}
                 className={
-                  "text-[#767676] text-[39px] lg:text-[16px] font-normal"
+                  "text-[#767676] text-[10px] lg:text-[16px] font-normal"
                 }
               />
             </div>
-            <button className="py-4 px-[65px] bg-[#262626]">
+            <button className="py-2 lg:py-4 px-10 lg:px-[65px] bg-[#262626]">
                 <Heading
                   text={"Continue"}
                   as={"h3"}
-                  className={"text-white text-[39px] lg:text-[14px] font-bold cursor-pointer"}
+                  className={"text-white text-[12px] lg:text-[14px] font-bold cursor-pointer"}
                 />
 
             </button>
