@@ -7,6 +7,7 @@ import Error from "./components/pages/Error";
 import About from "./components/pages/About";
 import ProductInside from "./components/pages/ProductInside";
 import Contact from "./components/pages/Contact";
+import Login from "./components/Login";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/productInside" element={<ProductInside/>} />
           <Route path="/contact" element={<Contact/>} />
+          <Route path="/login" element={<Login/>} />
 
           <Route path="*" element={<Error />} />
         </Route>
