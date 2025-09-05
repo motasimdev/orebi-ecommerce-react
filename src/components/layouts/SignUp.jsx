@@ -38,6 +38,60 @@ const SignUp = () => {
               }
             />
           </div>
+
+          {/* =============================== personal details */}
+          <div className="py-5 lg:py-[60px]">
+            <Heading
+              text={"Your Personal Details"}
+              as={"p"}
+              className={"text-[#262626] text-[20px] lg:text-[39px] font-bold"}
+            />
+
+            <Flex className={"gap-x-5 pt-5 lg:pt-10"}>
+              <div className="">
+                <Heading
+                  text={"First Name"}
+                  as={"p"}
+                  className={
+                    "text-[#262626] text-[12px] lg:text-[16px] font-bold"
+                  }
+                />
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="...@gmail.com"
+                  className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"
+                />
+              </div>
+              <div className="">
+                <Heading
+                  text={"Password"}
+                  as={"p"}
+                  className={
+                    "text-[#262626] text-[12px] lg:text-[16px] font-bold"
+                  }
+                />
+                <input
+                  type="password"
+                  name=""
+                  id=""
+                  placeholder="*****"
+                  className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"
+                />
+              </div>
+            </Flex>
+            <button className="cursor-pointer px-10 lg:px-20 py-1 lg:py-4 border border-[#2B2B2B]">
+              <Heading
+                text={"Log in"}
+                as={"p"}
+                className={
+                  "text-[#262626] text-[12px] lg:text-[14px] font-bold"
+                }
+              />
+            </button>
+          </div>
+          {/* =============================== personal details end */}
         </Container>
       </div>
     </>
