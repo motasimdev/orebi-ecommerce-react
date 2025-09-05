@@ -34,7 +34,7 @@ const Login = () => {
 
           {/* ========================== */}
 
-          <div className="w-[300px] lg:w-[644px] py-6 lg:py-[70px]">
+          <div className="w-[350px] lg:w-[644px] py-6 lg:py-[70px]">
             <Heading
               text={
                 "Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry's standard dummy text ever since the."
@@ -103,9 +103,9 @@ const Login = () => {
             <Heading
               text={"New Customer"}
               as={"h3"}
-              className={"text-[#262626] text-[39px] lg:text-[39px] font-bold"}
+              className={"text-[#262626] text-[20px] lg:text-[39px] font-bold"}
             />
-            <div className="w-[300px] lg:w-[644px] py-[50px]">
+            <div className="w-[350px] lg:w-[644px] py-6 lg:py-[50px]">
               <Heading
                 text={
                     "Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry's standard dummy text ever since the."
