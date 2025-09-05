@@ -99,16 +99,16 @@ const Login = () => {
             </button>
           </div>
           <div className="h-[1px] bg-[#D8D8D8]"></div>
-          <div className="">
+          <div className="py-[60px]">
             <Heading
               text={"New Customer"}
               as={"h3"}
               className={"text-[#262626] text-[39px] lg:text-[39px] font-bold"}
             />
-            <div className="w-[644px] py-[70px]">
+            <div className="w-[644px] py-[50px]">
               <Heading
                 text={
-                  "Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry's standard dummy text ever since the."
+                    "Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry's standard dummy text ever since the."
                 }
                 as={"h3"}
                 className={
@@ -116,6 +116,14 @@ const Login = () => {
                 }
               />
             </div>
+            <button className="py-4 px-[65px] bg-[#262626]">
+                <Heading
+                  text={"Continue"}
+                  as={"h3"}
+                  className={"text-white text-[39px] lg:text-[14px] font-bold cursor-pointer"}
+                />
+
+            </button>
           </div>
         </Container>
       </div>
