@@ -4,7 +4,7 @@ import { Link } from "react-router";
 const BrandCatagry = () => {
   return (
     <>
-      <div className="py-3 lg:py-10">
+      <div className="pb-10 lg:pb-0  lg:py-10">
         <div className="pb-3">
           <h3 className={"font-bold text-md lg:text-xl text-[#262626]"}>Shop by Brand</h3>
         </div>

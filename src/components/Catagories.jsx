@@ -312,7 +312,7 @@ const Catagories = () => {
 
       {/* ===============responsive===============
        */}
-      <div className="py-3 lg:hidden">
+      <div className="pb-10 lg:pb-0 pt-5 lg:hidden">
         <h3 className={"font-bold text-md text-[#262626] pb-1"}>
           Shop by Category
         </h3>
