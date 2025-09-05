@@ -1,16 +1,16 @@
-import React from 'react'
-import Container from '../Container'
-import Heading from '../Heading'
+import React from "react";
+import Container from "../Container";
+import Heading from "../Heading";
 import { IoIosArrowForward } from "react-icons/io";
-import Flex from '../Flex';
-
+import Flex from "../Flex";
+import { FaCaretDown } from "react-icons/fa";
 
 
 const SignUp = () => {
   return (
     <>
-    <div className="pt-2 lg:pt-[50px] pb-2 lg:pb-[30px] pl-3 lg:pl-0">
-        <Container>
+      <div className="pt-2 lg:pt-[50px] pb-2 lg:pb-[30px] pl-3 lg:pl-0">
+        <Container className={"overflow-hidden"}>
           <Heading
             text={"Sign up"}
             as={"p"}
@@ -23,7 +23,9 @@ const SignUp = () => {
               className={"text-[#767676] text-[9px] lg:text-[12px] font-normal"}
             />
             <IoIosArrowForward
-              className={"mx-2 text-[#767676] text-[9px] lg:text-[12px] font-normal"}
+              className={
+                "mx-2 text-[#767676] text-[9px] lg:text-[12px] font-normal"
+              }
             />
             <Heading
               text={"Shop"}
@@ -33,7 +35,7 @@ const SignUp = () => {
           </div>
 
           {/* ================================ */}
-           <div className="w-[350px] lg:w-[644px] py-6 lg:py-[70px]">
+          <div className="w-[350px] lg:w-[644px] py-6 lg:py-[70px]">
             <Heading
               text={
                 "Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry's standard dummy text ever since the."
@@ -208,6 +210,59 @@ const SignUp = () => {
                 />
               </div>
             </Flex>
+            <Flex className={"gap-x-5 pt-3 lg:pt-6"}>
+              <div className="">
+                <Heading
+                  text={"Division"}
+                  as={"p"}
+                  className={
+                    "text-[#262626] text-[12px] lg:text-[16px] font-bold"
+                  }
+                />
+                <div className="relative">
+                  <select
+                    name="choice"
+                    className="border border-[#F0F0F0] w-[90px] lg:w-[500px] text-[#767676fd] text-[10px] lg:text-base px-2 lg:px-5 py-1 lg:py-2 appearance-none focus:outline-none focus:border-gray-300 cursor-pointer"
+                  >
+                    <option
+                      value="Feature"
+                      className="font-normal text-[10px] lg:text-base text-[#767676] hidden"
+                    >
+                      Please select
+                    </option>
+                    <option
+                      value="Price Low to High"
+                      className="font-normal text-[10px] lg:text-base text-[#767676]"
+                    >
+                      Dhaka
+                    </option>
+                    <option
+                      value="Price High to Low"
+                      className="font-normal text-[10px] lg:text-base text-[#767676]"
+                    >
+                      Noakhali
+                    </option>
+                  </select>
+                  <FaCaretDown className="text-[10px] lg:text-base absolute top-1/2 -translate-y-1/2 right-1 lg:right-3 pointer-events-none text-[#737373]" />
+                </div>
+              </div>
+              <div className="">
+                <Heading
+                  text={"Post Code"}
+                  as={"p"}
+                  className={
+                    "text-[#262626] text-[12px] lg:text-[16px] font-bold"
+                  }
+                />
+                <input
+                  type="number"
+                  name=""
+                  id=""
+                  placeholder="05228"
+                  className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"
+                />
+              </div>
+            </Flex>
             <button className="cursor-pointer px-10 lg:px-20 py-1 lg:py-4 border border-[#2B2B2B]">
               <Heading
                 text={"Log in"}
@@ -223,7 +278,7 @@ const SignUp = () => {
         </Container>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default SignUp
+export default SignUp;
