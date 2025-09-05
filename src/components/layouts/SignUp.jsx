@@ -45,9 +45,10 @@ const SignUp = () => {
               }
             />
           </div>
+          <div className="h-[1px] bg-[#D8D8D8]"></div>
 
           {/* =============================== personal details */}
-          <div className="py-5 lg:py-[60px]">
+          <div className="py-5 lg:py-[50px]">
             <Heading
               text={"Your Personal Details"}
               as={"p"}
@@ -122,16 +123,8 @@ const SignUp = () => {
                 />
               </div>
             </Flex>
-            <button className="cursor-pointer px-10 lg:px-20 py-1 lg:py-4 border border-[#2B2B2B]">
-              <Heading
-                text={"Log in"}
-                as={"p"}
-                className={
-                  "text-[#262626] text-[12px] lg:text-[14px] font-bold"
-                }
-              />
-            </button>
           </div>
+          <div className="h-[1px] bg-[#D8D8D8]"></div>
 
           {/* =============new customer========== end */}
           <div className="py-5 lg:py-[60px]">
@@ -209,6 +202,9 @@ const SignUp = () => {
                 />
               </div>
             </Flex>
+
+            {/* ============== */}
+
             <Flex className={"gap-x-5 pt-3 lg:pt-6"}>
               <div className="">
                 <Heading
@@ -282,19 +278,61 @@ const SignUp = () => {
               </div>
             </Flex>
 
-
-
+            {/* ====================*/}
           </div>
+
           <div className="h-[1px] bg-[#D8D8D8]"></div>
-            <button className="cursor-pointer px-10 lg:px-20 py-1 lg:py-4 border border-[#2B2B2B] mt-6">
-              <Heading
-                text={"Sign up"}
-                as={"p"}
-                className={
-                  "text-[#262626] text-[12px] lg:text-[14px] font-bold"
-                }
-              />
-            </button>
+          
+
+          <div className="py-5 lg:py-[60px]">
+            <Heading
+              text={"New Customer"}
+              as={"p"}
+              className={"text-[#262626] text-[20px] lg:text-[39px] font-bold"}
+            />
+
+            <Flex className={"gap-x-5 pt-5 lg:pt-10"}>
+              <div className="">
+                <Heading
+                  text={"Address 1"}
+                  as={"p"}
+                  className={
+                    "text-[#262626] text-[12px] lg:text-[16px] font-bold"
+                  }
+                />
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="4279 Zboncak Port Suite 6212"
+                  className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"
+                />
+              </div>
+              <div className="">
+                <Heading
+                  text={"Address 2"}
+                  as={"p"}
+                  className={
+                    "text-[#262626] text-[12px] lg:text-[16px] font-bold"
+                  }
+                />
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="—"
+                  className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"
+                />
+              </div>
+            </Flex>
+          </div>
+          <button className="cursor-pointer px-10 lg:px-20 py-1 lg:py-4 border border-[#2B2B2B] mt-6">
+            <Heading
+              text={"Sign up"}
+              as={"p"}
+              className={"text-[#262626] text-[12px] lg:text-[14px] font-bold"}
+            />
+          </button>
           {/* =============new customer========== end */}
           {/* =============================== personal details end */}
         </Container>
