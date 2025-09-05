@@ -39,7 +39,7 @@ const Login = () => {
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the.
           </div>
-          <div className="h-[1px] text-[#cdc7c7]"></div>
+          <div className="h-[1px] bg-[#D8D8D8]"></div>
 
           <div className="py-[60px]">
             <Heading
@@ -48,7 +48,7 @@ const Login = () => {
               className={"text-[#262626] text-[10px] lg:text-[39px] font-bold"}
             />
 
-            <Flex className={"gap-x-5"}>
+            <Flex className={"gap-x-5 pt-10"}>
               <div className="">
                 <Heading
                   text={"Email address"}
@@ -57,7 +57,13 @@ const Login = () => {
                     "text-[#262626] text-[39px] lg:text-[16px] font-bold"
                   }
                 />
-                <input type="email" name="" id="" placeholder="" className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"/>
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="...@gmail.com"
+                  className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"
+                />
               </div>
               <div className="">
                 <Heading
@@ -67,9 +73,26 @@ const Login = () => {
                     "text-[#262626] text-[39px] lg:text-[16px] font-bold"
                   }
                 />
-                <input type="email" name="" id="" placeholder="" className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"/>
+                <input
+                  type="password"
+                  name=""
+                  id=""
+                  placeholder="*****"
+                  className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"
+                />
               </div>
             </Flex>
+            <button className="cursor-pointer px-20 py-4 border border-[#2B2B2B]">
+                <Heading
+                  text={"Log in"}
+                  as={"p"}
+                  className={
+                    "text-[#262626] text-[39px] lg:text-[14px] font-bold"
+                  }
+                />
+
+            </button>
+            <div className="h-[1px] bg-[#D8D8D8]"></div>
           </div>
         </Container>
       </div>
