@@ -1,4 +1,10 @@
 import React from 'react'
+import Container from '../Container'
+import Heading from '../Heading'
+import { IoIosArrowForward } from "react-icons/io";
+import Flex from '../Flex';
+
+
 
 const SignUp = () => {
   return (
@@ -81,7 +87,7 @@ const SignUp = () => {
                 />
               </div>
             </Flex>
-            <Flex className={"gap-x-5 pt-5 lg:pt-10"}>
+            <Flex className={"gap-x-5 pt-3 lg:pt-6"}>
               <div className="">
                 <Heading
                   text={"Email address"}
@@ -125,6 +131,94 @@ const SignUp = () => {
               />
             </button>
           </div>
+
+          {/* =============new customer========== end */}
+          <div className="py-5 lg:py-[60px]">
+            <Heading
+              text={"New Customer"}
+              as={"p"}
+              className={"text-[#262626] text-[20px] lg:text-[39px] font-bold"}
+            />
+
+            <Flex className={"gap-x-5 pt-5 lg:pt-10"}>
+              <div className="">
+                <Heading
+                  text={"Address 1"}
+                  as={"p"}
+                  className={
+                    "text-[#262626] text-[12px] lg:text-[16px] font-bold"
+                  }
+                />
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="4279 Zboncak Port Suite 6212"
+                  className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"
+                />
+              </div>
+              <div className="">
+                <Heading
+                  text={"Address 2"}
+                  as={"p"}
+                  className={
+                    "text-[#262626] text-[12px] lg:text-[16px] font-bold"
+                  }
+                />
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="—"
+                  className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"
+                />
+              </div>
+            </Flex>
+            <Flex className={"gap-x-5 pt-3 lg:pt-6"}>
+              <div className="">
+                <Heading
+                  text={"City"}
+                  as={"p"}
+                  className={
+                    "text-[#262626] text-[12px] lg:text-[16px] font-bold"
+                  }
+                />
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Your city"
+                  className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"
+                />
+              </div>
+              <div className="">
+                <Heading
+                  text={"Post Code"}
+                  as={"p"}
+                  className={
+                    "text-[#262626] text-[12px] lg:text-[16px] font-bold"
+                  }
+                />
+                <input
+                  type="number"
+                  name=""
+                  id=""
+                  placeholder="05228"
+                  className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"
+                />
+              </div>
+            </Flex>
+            <button className="cursor-pointer px-10 lg:px-20 py-1 lg:py-4 border border-[#2B2B2B]">
+              <Heading
+                text={"Log in"}
+                as={"p"}
+                className={
+                  "text-[#262626] text-[12px] lg:text-[14px] font-bold"
+                }
+              />
+            </button>
+          </div>
+          {/* =============new customer========== end */}
           {/* =============================== personal details end */}
         </Container>
       </div>

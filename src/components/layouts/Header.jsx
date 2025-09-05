@@ -189,7 +189,9 @@ const Header = () => {
                       <Link to={"/login"}>
                         <h3>Log In</h3>
                       </Link>
-                      <h3>Sign Up</h3>
+                      <Link to={"/signup"}>
+                        <h3>Sign Up</h3>
+                      </Link>
                     </div>
                   </>
                 )}
@@ -306,7 +308,9 @@ const Header = () => {
                       <Link to={"/login"}>
                         <h3>Log In</h3>
                       </Link>
-                      <h3>Sign Up</h3>
+                      <Link to={"/signup"}>
+                        <h3>Sign Up</h3>
+                      </Link>
                     </div>
                   </>
                 )}
