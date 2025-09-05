@@ -81,6 +81,40 @@ const SignUp = () => {
                 />
               </div>
             </Flex>
+            <Flex className={"gap-x-5 pt-5 lg:pt-10"}>
+              <div className="">
+                <Heading
+                  text={"Email address"}
+                  as={"p"}
+                  className={
+                    "text-[#262626] text-[12px] lg:text-[16px] font-bold"
+                  }
+                />
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="company@domain.com"
+                  className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"
+                />
+              </div>
+              <div className="">
+                <Heading
+                  text={"Telephone"}
+                  as={"p"}
+                  className={
+                    "text-[#262626] text-[12px] lg:text-[16px] font-bold"
+                  }
+                />
+                <input
+                  type="number"
+                  name=""
+                  id=""
+                  placeholder="Your phone number"
+                  className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"
+                />
+              </div>
+            </Flex>
             <button className="cursor-pointer px-10 lg:px-20 py-1 lg:py-4 border border-[#2B2B2B]">
               <Heading
                 text={"Log in"}
