@@ -187,7 +187,7 @@ const Header = () => {
                     ></div>
                     <div className="absolute top-4.5 right-0 bg-gray-200 z-30 w-[120px] shadow-lg rounded p-2">
                       <Link to={"/login"}>
-                      <h3>Log In</h3>
+                        <h3>Log In</h3>
                       </Link>
                       <h3>Sign Up</h3>
                     </div>
@@ -303,7 +303,9 @@ const Header = () => {
                       onClick={() => setLogin(false)}
                     ></div>
                     <div className="absolute top-4.5 right-0 bg-gray-200 z-30 w-[80px] p-2">
-                      <h3>Log In</h3>
+                      <Link to={"/login"}>
+                        <h3>Log In</h3>
+                      </Link>
                       <h3>Sign Up</h3>
                     </div>
                   </>
