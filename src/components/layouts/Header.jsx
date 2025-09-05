@@ -266,7 +266,7 @@ const Header = () => {
                 </>
               )}
               <div
-                className={`fixed top-0 left-0 bg-gray-100 z-30 w-[150px] h-[100vh] p-2 pt-7 transform transition-transform duration-300 
+                className={`fixed top-0 left-0 bg-gray-100 z-30 w-[200px] h-[100vh] p-2 pt-7 transform transition-transform duration-300 overflow-hidden overflow-y-auto
                   ${category ? "translate-x-0" : "-translate-x-full"}`}
               >
                 <button
@@ -275,10 +275,7 @@ const Header = () => {
                 >
                   <RxCross1 />
                 </button>
-                <h3>Men's Fasion</h3>
-                <h3>Women's Fasion</h3>
-                <h3>Electronics</h3>
-                <h3>Food</h3>
+                <Catagories/>
               </div>
             </div>
 
