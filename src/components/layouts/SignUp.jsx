@@ -57,26 +57,26 @@ const SignUp = () => {
                   }
                 />
                 <input
-                  type="email"
+                  type="text"
                   name=""
                   id=""
-                  placeholder="...@gmail.com"
+                  placeholder="First Name"
                   className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"
                 />
               </div>
               <div className="">
                 <Heading
-                  text={"Password"}
+                  text={"Last Name"}
                   as={"p"}
                   className={
                     "text-[#262626] text-[12px] lg:text-[16px] font-bold"
                   }
                 />
                 <input
-                  type="password"
+                  type="text"
                   name=""
                   id=""
-                  placeholder="*****"
+                  placeholder="Last Name"
                   className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"
                 />
               </div>
