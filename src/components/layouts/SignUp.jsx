@@ -282,11 +282,10 @@ const SignUp = () => {
           </div>
 
           <div className="h-[1px] bg-[#D8D8D8]"></div>
-          
 
-          <div className="py-5 lg:py-[60px]">
+          <div className="py-5 lg:py-[50px]">
             <Heading
-              text={"New Customer"}
+              text={"Your Password"}
               as={"p"}
               className={"text-[#262626] text-[20px] lg:text-[39px] font-bold"}
             />
@@ -294,45 +293,72 @@ const SignUp = () => {
             <Flex className={"gap-x-5 pt-5 lg:pt-10"}>
               <div className="">
                 <Heading
-                  text={"Address 1"}
+                  text={"Password"}
                   as={"p"}
                   className={
                     "text-[#262626] text-[12px] lg:text-[16px] font-bold"
                   }
                 />
                 <input
-                  type="text"
+                  type="password"
                   name=""
                   id=""
-                  placeholder="4279 Zboncak Port Suite 6212"
+                  placeholder="Password"
                   className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"
                 />
               </div>
               <div className="">
                 <Heading
-                  text={"Address 2"}
+                  text={"Repeat password"}
                   as={"p"}
                   className={
                     "text-[#262626] text-[12px] lg:text-[16px] font-bold"
                   }
                 />
                 <input
-                  type="text"
+                  type="password"
                   name=""
                   id=""
-                  placeholder="—"
+                  placeholder="Repeat password"
                   className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"
                 />
               </div>
             </Flex>
           </div>
-          <button className="cursor-pointer px-10 lg:px-20 py-1 lg:py-4 border border-[#2B2B2B] mt-6">
-            <Heading
-              text={"Sign up"}
-              as={"p"}
-              className={"text-[#262626] text-[12px] lg:text-[14px] font-bold"}
-            />
-          </button>
+
+          <div className="h-[1px] bg-[#D8D8D8]"></div>
+
+          <div className="py-5 lg:py-[50px]">
+            <div className="flex items-center gap-3">
+              <input type="checkbox" name="" id="" required className="" />
+              <Heading
+                text={"I have read and agree to the Privacy Policy"}
+                as={"p"}
+                className={
+                  "text-[#767676] text-[12px] lg:text-[14px] font-normal"
+                }
+              />
+            </div>
+
+            <div className="flex items-center gap-3 mt-5">
+              <Heading
+                text={"Subscribe Newsletter"}
+                as={"p"}
+                className={
+                  "text-[#767676] text-[12px] lg:text-[14px] font-normal"
+                }
+              />
+              <span className="text-[#767676] text-[12px] lg:text-[14px] font-normal">yes</span><input type="radio" name="yes" id="" />
+              <span className="text-[#767676] text-[12px] lg:text-[14px] font-normal">no</span><input type="radio" name="yes" id="" />
+            </div>
+            <button className="cursor-pointer px-10 lg:px-20 py-1 lg:py-4 bg-[#262626] mt-6">
+              <Heading
+                text={"Sign up"}
+                as={"p"}
+                className={"text-white text-[12px] lg:text-[14px] font-bold"}
+              />
+            </button>
+          </div>
           {/* =============new customer========== end */}
           {/* =============================== personal details end */}
         </Container>
