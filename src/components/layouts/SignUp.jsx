@@ -5,7 +5,6 @@ import { IoIosArrowForward } from "react-icons/io";
 import Flex from "../Flex";
 import { FaCaretDown } from "react-icons/fa";
 
-
 const SignUp = () => {
   return (
     <>
@@ -35,7 +34,7 @@ const SignUp = () => {
           </div>
 
           {/* ================================ */}
-          <div className="w-[350px] lg:w-[644px] py-6 lg:py-[70px]">
+          <div className="w-[350px] lg:w-[644px] py-6 lg:py-[50px]">
             <Heading
               text={
                 "Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry's standard dummy text ever since the."
@@ -216,7 +215,42 @@ const SignUp = () => {
                   text={"Division"}
                   as={"p"}
                   className={
-                    "text-[#262626] text-[12px] lg:text-[16px] font-bold"
+                    "text-[#262626] text-[12px] lg:text-[16px] font-bold pb-4"
+                  }
+                />
+                <div className="relative">
+                  <select
+                    name="choice"
+                    className="border border-[#F0F0F0] w-[90px] lg:w-[500px] text-[#767676fd] text-[10px] lg:text-base px-2 lg:px-5 py-1 lg:py-2 appearance-none focus:outline-none focus:border-gray-300 cursor-pointer"
+                  >
+                    <option
+                      value="Feature"
+                      className="font-normal text-[10px] lg:text-base text-[#767676] hidden"
+                    >
+                      Please select
+                    </option>
+                    <option
+                      value="Price Low to High"
+                      className="font-normal text-[10px] lg:text-base text-[#767676]"
+                    >
+                      Dhaka
+                    </option>
+                    <option
+                      value="Price High to Low"
+                      className="font-normal text-[10px] lg:text-base text-[#767676]"
+                    >
+                      Chattogram
+                    </option>
+                  </select>
+                  <FaCaretDown className="text-[10px] lg:text-base absolute top-1/2 -translate-y-1/2 right-1 lg:right-3 pointer-events-none text-[#737373]" />
+                </div>
+              </div>
+              <div className="">
+                <Heading
+                  text={"District"}
+                  as={"p"}
+                  className={
+                    "text-[#262626] text-[12px] lg:text-[16px] font-bold pb-4"
                   }
                 />
                 <div className="relative">
@@ -246,33 +280,21 @@ const SignUp = () => {
                   <FaCaretDown className="text-[10px] lg:text-base absolute top-1/2 -translate-y-1/2 right-1 lg:right-3 pointer-events-none text-[#737373]" />
                 </div>
               </div>
-              <div className="">
-                <Heading
-                  text={"Post Code"}
-                  as={"p"}
-                  className={
-                    "text-[#262626] text-[12px] lg:text-[16px] font-bold"
-                  }
-                />
-                <input
-                  type="number"
-                  name=""
-                  id=""
-                  placeholder="05228"
-                  className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"
-                />
-              </div>
             </Flex>
-            <button className="cursor-pointer px-10 lg:px-20 py-1 lg:py-4 border border-[#2B2B2B]">
+
+
+
+          </div>
+          <div className="h-[1px] bg-[#D8D8D8]"></div>
+            <button className="cursor-pointer px-10 lg:px-20 py-1 lg:py-4 border border-[#2B2B2B] mt-6">
               <Heading
-                text={"Log in"}
+                text={"Sign up"}
                 as={"p"}
                 className={
                   "text-[#262626] text-[12px] lg:text-[14px] font-bold"
                 }
               />
             </button>
-          </div>
           {/* =============new customer========== end */}
           {/* =============================== personal details end */}
         </Container>
