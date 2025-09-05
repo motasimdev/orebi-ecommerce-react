@@ -10,6 +10,10 @@ import { Link } from "react-router";
 import { FaBars } from "react-icons/fa6";
 import BarCatagory from "../../assets/icons/BarCatagory";
 import { RxCross1 } from "react-icons/rx";
+import Catagories from "../Catagories";
+import ColorCatagry from "../ColorCatagry";
+import PriceCatgry from "../PriceCatgry";
+import BrandCatagry from "../BrandCatagry";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -141,19 +145,19 @@ const Header = () => {
                 </>
               )}
               <div
-                className={`fixed top-0 left-0 bg-white z-30 w-[300px] h-[100vh] p-2 shadow-2xl transform transition-transform duration-300 
+                className={`fixed top-0 left-0 bg-white z-30 w-[400px] h-[100vh] p-2 shadow-2xl transform transition-transform duration-300 overflow-hidden overflow-y-auto
                   ${category ? "translate-x-0" : "-translate-x-full"}`}
               >
                 <button
-                  className="cursor-pointer"
+                  className="cursor-pointer absolute top-3 right-3"
                   onClick={() => setCatagory(false)}
                 >
                   <RxCross1 />
                 </button>
-                <h3>Men's Fasion</h3>
-                <h3>Women's Fasion</h3>
-                <h3>Electronics</h3>
-                <h3>Food</h3>
+                <Catagories/>
+                <ColorCatagry/>
+                <PriceCatgry/>
+                <BrandCatagry/>
               </div>
             </div>
             {/* =======catagory======== */}
