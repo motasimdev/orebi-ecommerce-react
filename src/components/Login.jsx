@@ -1,14 +1,13 @@
-import React from 'react'
-import Container from './Container'
-import Heading from './Heading'
+import React from "react";
+import Container from "./Container";
+import Heading from "./Heading";
+import Flex from "./Flex";
 import { IoIosArrowForward } from "react-icons/io";
-
-
 
 const Login = () => {
   return (
     <>
-    <div className="pt-2 lg:pt-[50px] pb-2 lg:pb-[30px] pl-3 lg:pl-0">
+      <div className="pt-2 lg:pt-[50px] pb-2 lg:pb-[30px] pl-3 lg:pl-0">
         <Container>
           <Heading
             text={"Login"}
@@ -22,7 +21,9 @@ const Login = () => {
               className={"text-[#767676] text-[9px] lg:text-[12px] font-normal"}
             />
             <IoIosArrowForward
-              className={"mx-2 text-[#767676] text-[9px] lg:text-[12px] font-normal"}
+              className={
+                "mx-2 text-[#767676] text-[9px] lg:text-[12px] font-normal"
+              }
             />
             <Heading
               text={"Login"}
@@ -30,18 +31,50 @@ const Login = () => {
               className={"text-[#767676] text-[9px] lg:text-[12px] font-normal"}
             />
           </div>
-                {/* ========================== */}
+
+          {/* ========================== */}
+
           <div className="font-normal text-base text-[#767676] w-[644px] py-[70px]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the.
           </div>
-          <div className="h-[1px] text-[#D8D8D8]"></div>
+          <div className="h-[1px] text-[#cdc7c7]"></div>
+
           <div className="py-[60px]">
-            <h4 className='font-bold text-[39px] text-[#262626]'>Returning Customer</h4>
+            <Heading
+              text={"Returning Customer"}
+              as={"p"}
+              className={"text-[#262626] text-[10px] lg:text-[39px] font-bold"}
+            />
+
+            <Flex className={"gap-x-5"}>
+              <div className="">
+                <Heading
+                  text={"Email address"}
+                  as={"p"}
+                  className={
+                    "text-[#262626] text-[39px] lg:text-[16px] font-bold"
+                  }
+                />
+                <input type="email" name="" id="" placeholder="" className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"/>
+              </div>
+              <div className="">
+                <Heading
+                  text={"Password"}
+                  as={"p"}
+                  className={
+                    "text-[#262626] text-[39px] lg:text-[16px] font-bold"
+                  }
+                />
+                <input type="email" name="" id="" placeholder="" className="lg:w-[500px] border-b border-b-[#D8D8D8] py-1 lg:py-3 mb-4 lg:mb-6 focus:outline-none placeholder:text-[10px] lg:placeholder:text-[14px]"/>
+              </div>
+            </Flex>
           </div>
         </Container>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
