@@ -9,6 +9,7 @@ import ProductInside from "./components/pages/ProductInside";
 import Contact from "./components/pages/Contact";
 import Login from "./components/Login";
 import SignUp from "./components/layouts/SignUp";
+import MyAccount from "./components/pages/MyAccount";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/contact" element={<Contact/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<SignUp/>} />
+          <Route path="/myAccount" element={<MyAccount/>} />
 
           <Route path="*" element={<Error />} />
         </Route>
