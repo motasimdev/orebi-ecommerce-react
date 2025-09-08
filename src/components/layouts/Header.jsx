@@ -53,7 +53,7 @@ const Header = () => {
                     Contact
                   </li>
                 </Link>
-                <Link to={"/Journal"}>
+                <Link to={"/myAccount"}>
                   <li className="hover:text-[#262626] text-[#767676] text-sm">
                     Journal
                   </li>
@@ -104,7 +104,7 @@ const Header = () => {
                     Contact
                   </li>
                 </Link>
-                <Link to={"/Journal"}>
+                <Link to={"/myAccount"}>
                   <li className="hover:text-[#262626] text-[#767676] text-sm py-1.5">
                     Journal
                   </li>
