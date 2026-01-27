@@ -10,14 +10,29 @@ import axios from "axios";
 
 const ShopContent = () => {
   const [myProducts, setMyproducts] = useState([]);
+  const [panding, setIspanding] = useState(false);
 
   useEffect(() => {
+    setIspanding(true);
     async function all() {
-      const data = await axios.get("https://dummyjson.com/products?limit=15&skip=10&select=title,price,thumbnail");
-      setMyproducts(data.data.products);
+      const data = await axios
+        .get(
+          "https://dummyjson.com/products",
+        )
+        .then((res) => setMyproducts(res.data.products))
+        .catch((error) => {
+          console.log(error.message);
+        })
+        .finally(() => {
+          setIspanding(false);
+        });
     }
     all();
   }, []);
+  
+  useEffect(()=>{
+    
+  },[])
 
   return (
     <>
