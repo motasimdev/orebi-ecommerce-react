@@ -10,8 +10,10 @@ import axios from "axios";
 
 const ShopContent = () => {
   const [myProducts, setMyproducts] = useState([]);
+  const [Categories, setCategories] = useState([])
   const [panding, setIspanding] = useState(false);
 
+  //product fetch
   useEffect(() => {
     setIspanding(true);
     async function all() {
@@ -21,7 +23,7 @@ const ShopContent = () => {
         )
         .then((res) => setMyproducts(res.data.products))
         .catch((error) => {
-          console.log(error.message);
+          // console.log(error.message);
         })
         .finally(() => {
           setIspanding(false);
@@ -30,10 +32,12 @@ const ShopContent = () => {
     all();
   }, []);
   
+  //categories
   useEffect(()=>{
-    
+    axios("https://dummyjson.com/products/categories")
+    .then(res=>setCategories(res.data))
   },[])
-
+  // console.log(Categories)
   return (
     <>
       <div className="">

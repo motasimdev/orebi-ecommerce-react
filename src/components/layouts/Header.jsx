@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Container from "../Container";
 import Flex from "../Flex";
 import Image from "../Image";
@@ -14,12 +14,39 @@ import Catagories from "../Catagories";
 import ColorCatagry from "../ColorCatagry";
 import PriceCatgry from "../PriceCatgry";
 import BrandCatagry from "../BrandCatagry";
+import axios from "axios";
+import SearchProduct from "./SearchProduct";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
+  const [product, setProduct] = useState([]);
   const [category, setCatagory] = useState(false);
   const [logIn, setLogin] = useState(false);
   const [cart, setCart] = useState(false);
+  const [search, setSearch] = useState('');
+  const [searchProducts, setSearchProducts] = useState([]);
+
+  //produc fetch
+  useEffect(() => {
+    async function all() {
+      const data = await axios
+        .get("https://dummyjson.com/products")
+        .then((res) => setProduct(res.data.products))
+        .catch((error) => {
+          console.log(error.message);
+        });
+    }
+    all();
+  }, []);
+
+  //search
+  const handleSearch = (e) => {
+    const value = e.target.value.trim().toLowerCase();
+    setSearch(value);
+    const filter = product.filter((item) =>
+      item.title.toLowerCase().includes(value))
+    setSearchProducts(filter);
+  };
 
   return (
     <>
@@ -154,22 +181,39 @@ const Header = () => {
                 >
                   <RxCross1 />
                 </button>
-                <Catagories/>
-                <ColorCatagry/>
-                <PriceCatgry/>
-                <BrandCatagry/>
+                <Catagories />
+                <ColorCatagry />
+                <PriceCatgry />
+                <BrandCatagry />
               </div>
             </div>
             {/* =======catagory======== */}
 
+            {/* search  */}
+
             <div className="relative">
               <input
-                type="text"
+                onChange={handleSearch}
+                type="search"
                 placeholder="Search Products"
                 className="p-4 w-[600px] border-none focus:outline-0 bg-white"
               />
-              <FaSearch className="absolute right-4 top-1/2 -translate-y-1/2 " />
+              {/* <FaSearch className="absolute right-4 top-1/2 -translate-y-1/2 " /> */}
+              {search && (
+                <div className="bg-white p-4 rounded-b-lg border border-gray-200 absolute left-0 top-15 w-full z-100">
+                  <div className="space-y-1">
+                    {searchProducts?.map((item) => (
+                      <SearchProduct products={item} key={item.id} />
+                    ))}
+                  </div>
+                  {searchProducts.length == 0 && (
+                    <h4 className="text-lg text-center">notfound</h4>
+                  )}
+                </div>
+              )}
             </div>
+
+            {/* search  */}
 
             {/* =========login signup ============ */}
             <div className="flex gap-x-3">
@@ -275,10 +319,10 @@ const Header = () => {
                 >
                   <RxCross1 />
                 </button>
-                <Catagories/>
-                <ColorCatagry/>
-                <PriceCatgry/>
-                <BrandCatagry/>
+                <Catagories />
+                <ColorCatagry />
+                <PriceCatgry />
+                <BrandCatagry />
               </div>
             </div>
 
