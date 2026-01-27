@@ -38,6 +38,8 @@ const ShopContent = () => {
     .then(res=>setCategories(res.data))
   },[])
   // console.log(Categories)
+
+  
   return (
     <>
       <div className="">

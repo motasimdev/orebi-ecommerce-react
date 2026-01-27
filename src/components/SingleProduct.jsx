@@ -24,7 +24,7 @@ const SingleProduct = ({BadgeText, imgSrc, alt, productTitle, productPrice }) =>
           </Link>
           <Link>
             <Flex className={"justify-end gap-x-3 my-3 "}>
-              <Heading text={"Compare"} as={"p"} className={"text-[#767676] text-base"} />
+              <Heading text={"Details"} as={"p"} className={"text-[#767676] text-base"} />
               <Compare/>
             </Flex>
           </Link>
