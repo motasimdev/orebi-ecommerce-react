@@ -1,17 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const counterSlice = createSlice({
+export const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
     addToCart: (state,action) => {
-        const gg = state.push()
-        console.log(gg)
+        state.push(action.payload)
+      
     },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = counterSlice.actions;
+export const { addToCart } = cartSlice.actions;
 
-export default counterSlice.reducer;
+export default cartSlice.reducer;

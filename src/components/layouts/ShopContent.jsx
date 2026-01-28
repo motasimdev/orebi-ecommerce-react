@@ -39,7 +39,7 @@ const ShopContent = () => {
   },[])
   // console.log(Categories)
 
-  
+
   return (
     <>
       <div className="">
@@ -118,8 +118,8 @@ const ShopContent = () => {
                 {myProducts.map((item) => (
                   <div className="w-[150px] md:w-[300px]" key={item.id}>
                     <SingleProduct
-                      imgSrc={item.thumbnail}
-                      alt={item.thumbnail}
+                      thumbnail={item.thumbnail}
+                      title={item.tite}
                       productPrice={item.price}
                       productTitle={item.title}
                       BadgeText={"10%"}
