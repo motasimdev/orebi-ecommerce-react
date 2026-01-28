@@ -6,15 +6,22 @@ import Heading from "./Heading";
 import { FaHeart, FaShoppingCart } from "react-icons/fa";
 import Flex from "./Flex";
 import Compare from "../icons/Compare";
+import { useDispatch, useSelector } from "react-redux";
+import { toast } from "react-toastify";
+import { addToCart } from "../features/cart/cartSlice";
 
-const SingleProduct = ({
-  BadgeText,
-  thumbnail,
-  title,
-  productTitle,
-  productPrice,
-  id
-}) => {
+const SingleProduct = ({ product }) => {
+  const { id, BadgeText, thumbnail, title, price } = product || {};
+  const cart = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+
+  //===========addToCart============
+  const handleAddToCart = () => {
+    const isExist = cart.some(item => item.id === id);
+    if (isExist) return toast.warn("This product already exist in your cart");
+    dispatch(addToCart({ ...product, quantity: 1 }));
+    toast.success("Product added in your cart");
+  };
   return (
     <>
       <div className="relative group px-5">
@@ -45,11 +52,12 @@ const SingleProduct = ({
           </Link>
           <Link>
             <Flex className={"justify-end gap-x-3 "}>
-              <Heading
-                text={"Add to Cart"}
-                as={"p"}
-                className={"text-[#767676] text-base"}
-              />
+              <button
+                onClick={handleAddToCart}
+                className={"text-[#767676] text-base cursor-pointer"}
+              >
+                Add to Cart
+              </button>
               <FaShoppingCart />
             </Flex>
           </Link>
@@ -57,12 +65,14 @@ const SingleProduct = ({
         <div className="py-3">
           <Flex className={"justify-between"}>
             <Heading
-              text={productTitle}
+              text={title}
               as={"h3"}
-              className={"text-[12px] lg:text-5 text-[#262626] font-bold line-clamp-1"}
+              className={
+                "text-[12px] lg:text-5 text-[#262626] font-bold line-clamp-1"
+              }
             />
             <Heading
-              text={productPrice}
+              text={price}
               as={"h3"}
               className={"text-[10px] lg:text-4 text-[#767676]"}
             />
