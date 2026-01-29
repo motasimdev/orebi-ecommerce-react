@@ -38,7 +38,7 @@ const Ads = () => {
                 scale: 0.9,
               }}
             >
-              <Link to={"/productInside"}>
+              <Link to={"/productDetails"}>
                 <Image src={adONe} alt={"adOn e"} className={"w-full"} />
               </Link>
             </motion.div>

@@ -5,11 +5,11 @@ import Home from "./components/pages/Home";
 import Shop from "./components/pages/Shop";
 import Error from "./components/pages/Error";
 import About from "./components/pages/About";
-import ProductInside from "./components/pages/ProductInside";
 import Contact from "./components/pages/Contact";
 import Login from "./components/Login";
 import SignUp from "./components/layouts/SignUp";
 import MyAccount from "./components/pages/MyAccount";
+import ProductDetails from "./components/pages/productDetails";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<About/>} />
-          <Route path="/productInside" element={<ProductInside/>} />
+          <Route path="/product/:id" element={<ProductDetails/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<SignUp/>} />
