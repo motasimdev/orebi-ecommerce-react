@@ -1,8 +1,6 @@
 import React from "react";
 import SingleProduct from "../SingleProduct";
 import Container from "../Container";
-import bag from "/src/assets/bag.png";
-import bagTwo from "/src/assets/bagTwo.png";
 import Heading from "../Heading";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
