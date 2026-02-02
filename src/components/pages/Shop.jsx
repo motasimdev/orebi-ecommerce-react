@@ -1,4 +1,4 @@
-import React from 'react'
+
 import ShopTitle from '../layouts/ShopTitle'
 import ShopContent from '../layouts/ShopContent'
 
