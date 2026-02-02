@@ -3,9 +3,7 @@ import SingleProduct from "../SingleProduct";
 import Container from "../Container";
 import Flex from "../Flex";
 import watchA from "/src/assets/watchA.png";
-import watchB from "/src/assets/watchB.png";
-import jhuri from "/src/assets/jhuri.png";
-import putul from "/src/assets/putul.png";
+
 import Heading from "../Heading";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

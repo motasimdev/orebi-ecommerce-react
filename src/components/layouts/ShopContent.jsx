@@ -117,7 +117,7 @@ const ShopContent = () => {
               <div className=" flex flex-wrap md:justify-between justify-around gap-y-3 pt-2 md:pt-13">
                 {myProducts.map((product) => (
                   <div className="w-[150px] md:w-[300px]" key={item.id}>
-                    <SingleProduct key={product.id} product={produc} />
+                    <SingleProduct key={product.id} product={product} />
                   </div>
                 ))}
               </div>
