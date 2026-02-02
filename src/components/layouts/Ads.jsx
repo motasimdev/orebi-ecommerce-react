@@ -1,4 +1,4 @@
-import React from "react";
+
 import Image from "../Image";
 import Container from "../Container";
 import Flex from "../Flex";

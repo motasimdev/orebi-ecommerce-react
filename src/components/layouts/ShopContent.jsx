@@ -30,13 +30,14 @@ const ShopContent = () => {
         });
     }
     all();
+    console.log(all())
   }, []);
   
   //categories
-  useEffect(()=>{
-    axios("https://dummyjson.com/products/categories")
-    .then(res=>setCategories(res.data))
-  },[])
+  // useEffect(()=>{
+  //   axios("https://dummyjson.com/products/categories")
+  //   .then(res=>setCategories(res.data))
+  // },[])
   // console.log(Categories)
 
 
@@ -117,7 +118,7 @@ const ShopContent = () => {
               <div className=" flex flex-wrap md:justify-between justify-around gap-y-3 pt-2 md:pt-13">
                 {myProducts.map((product) => (
                   <div className="w-[150px] md:w-[300px]" key={item.id}>
-                    <SingleProduct key={product.id} product={product} />
+                    <SingleProduct product={product} />
                   </div>
                 ))}
               </div>
