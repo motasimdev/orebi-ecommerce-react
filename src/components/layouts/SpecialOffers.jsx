@@ -4,8 +4,6 @@ import Container from "../Container";
 import Flex from "../Flex";
 import cap from "/src/assets/cap.png";
 import table from "/src/assets/table.png";
-import headphon from "/src/assets/headphone.png";
-import glasses from "/src/assets/glasses.png";
 import Heading from "../Heading";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
