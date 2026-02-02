@@ -1,7 +1,6 @@
 import React from "react";
 import SingleProduct from "../SingleProduct";
 import Container from "../Container";
-import Flex from "../Flex";
 import Heading from "../Heading";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
